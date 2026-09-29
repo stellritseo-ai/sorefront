@@ -17,7 +17,7 @@ export function About() {
               className="aspect-4/5 w-full object-cover transition-transform duration-[1.2s] hover:scale-[1.04]"
             />
           </div>
-          <div className="glass-strong absolute -bottom-6 -right-4 rounded-sm px-6 py-5 sm:right-auto sm:-left-6">
+          <div className="glass-strong absolute bottom-0 right-0 rounded-sm px-6 py-5 sm:-bottom-6 sm:right-auto sm:-left-6">
             <p className="font-display text-3xl font-bold leading-none text-primary">5+</p>
             <p className="mt-2 text-[0.6rem] uppercase tracking-[0.22em] text-muted-foreground">
               Years
