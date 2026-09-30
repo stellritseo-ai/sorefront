@@ -52,13 +52,13 @@ export function Navbar() {
             <Logo />
           </a>
 
-          {/* Navigation Links (shifted toward right, larger font size, premium pill micro-interactions) */}
-          <ul className="relative z-10 hidden items-center gap-1.5 ml-auto mr-2.5 lg:flex">
+          {/* Navigation Links */}
+          <ul className="relative z-10 hidden items-center gap-1 ml-auto mr-2.5 lg:flex">
             {navLinks.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="relative inline-flex items-center rounded-full px-4 py-2 text-[0.98rem] font-semibold uppercase tracking-[0.10em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] transition-all duration-200 hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)] active:scale-[0.97]"
+                  className="relative inline-flex items-center rounded-full px-3.5 py-1.5 text-[16px] font-medium uppercase tracking-[0.06em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] transition-all duration-200 hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)] active:scale-[0.97]"
                 >
                   {l.label}
                 </a>
@@ -122,7 +122,7 @@ export function Navbar() {
                   <a
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="block rounded-md border-b border-white/20 px-4 py-3.5 text-base font-semibold uppercase tracking-[0.14em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition-all hover:bg-white/20 hover:pl-5"
+                    className="block rounded-md border-b border-white/20 px-4 py-3 text-[16px] font-medium uppercase tracking-[0.08em] text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)] transition-all hover:bg-white/20 hover:pl-5"
                   >
                     {l.label}
                   </a>
