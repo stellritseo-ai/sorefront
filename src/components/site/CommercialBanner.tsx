@@ -15,7 +15,8 @@ export function CommercialBanner() {
       <div className="absolute inset-0 bg-charcoal/60" />
       <div className="relative mx-auto max-w-[86rem] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <span className="glass-dark inline-block rounded-sm px-4 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-background">
+          <span className="glass-pill inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.26em] text-background">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-champagne" />
             Commercial Only
           </span>
         </Reveal>

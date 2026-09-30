@@ -40,7 +40,7 @@ export function Featured() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
-              className={`glass-dark absolute rounded-sm px-4 py-2 text-[0.6rem] font-medium uppercase tracking-[0.22em] text-background ${l.pos}`}
+              className={`glass-dark glass-sheen shadow-lift absolute rounded-sm px-4 py-2 text-[0.62rem] font-medium uppercase tracking-[0.22em] text-background ${l.pos}`}
             >
               {l.text}
             </motion.span>
@@ -51,7 +51,7 @@ export function Featured() {
           {labels.map((l) => (
             <span
               key={l.text}
-              className="glass-dark rounded-sm px-3 py-2 text-[0.58rem] font-medium uppercase tracking-[0.2em] text-background"
+              className="glass-dark rounded-sm px-3.5 py-2 text-[0.6rem] font-medium uppercase tracking-[0.2em] text-background"
             >
               {l.text}
             </span>

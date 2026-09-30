@@ -32,8 +32,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="text-[0.68rem] font-medium uppercase tracking-[0.3em] text-background/75"
+          className="glass-pill inline-flex items-center gap-2 self-start rounded-full px-4 py-1.5 text-[0.68rem] font-medium uppercase tracking-[0.24em] text-background/90"
         >
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-champagne" />
           Commercial Glass • Dallas, Texas
         </motion.p>
 
@@ -73,12 +74,12 @@ export function Hero() {
           </a>
           <a
             href={site.phoneHref}
-            className="glass-dark inline-flex items-center gap-3 rounded-sm px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-background transition-colors duration-300 hover:bg-background/15"
+            className="glass-dark-interactive inline-flex items-center gap-3 rounded-sm px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-background"
           >
             <Phone className="h-4 w-4" />
             Call {site.phone}
           </a>
-          <span className="text-[0.68rem] uppercase tracking-[0.2em] text-background/65">
+          <span className="glass-pill hidden rounded-full px-3.5 py-1.5 text-[0.66rem] uppercase tracking-[0.2em] text-background/85 sm:inline-flex">
             24/7 Commercial Emergency Service
           </span>
         </motion.div>
@@ -87,7 +88,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.65 }}
-          className="glass-dark mt-12 grid grid-cols-2 divide-x divide-y divide-background/15 rounded-sm sm:grid-cols-4 sm:divide-y-0"
+          className="glass-dark glass-sheen mt-12 grid grid-cols-2 divide-x divide-y divide-background/15 rounded-sm shadow-lift sm:grid-cols-4 sm:divide-y-0"
         >
           {facts.map((f) => (
             <div key={f.v} className="px-5 py-5">

@@ -16,18 +16,24 @@ export function Faq() {
           <h2 className="display-lg mt-5">Questions, answered.</h2>
         </Reveal>
         <div className="lg:col-span-8">
-          <Accordion type="single" collapsible className="border-t border-border">
-            {faqs.map((f, i) => (
-              <AccordionItem key={f.q} value={`item-${i}`} className="border-b border-border">
-                <AccordionTrigger className="py-6 text-left font-display text-[0.9rem] font-bold uppercase tracking-[-0.01em] hover:no-underline">
-                  {f.q}
-                </AccordionTrigger>
-                <AccordionContent className="pb-6 text-[0.85rem] leading-relaxed text-muted-foreground">
-                  {f.a}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <div className="glass-panel glass-sheen shadow-lift rounded-sm px-6 py-2 sm:px-8">
+            <Accordion type="single" collapsible>
+              {faqs.map((f, i) => (
+                <AccordionItem
+                  key={f.q}
+                  value={`item-${i}`}
+                  className="border-b border-border/80 last:border-b-0"
+                >
+                  <AccordionTrigger className="py-6 text-left font-display text-[0.9rem] font-bold uppercase tracking-[-0.01em] hover:no-underline">
+                    {f.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="pb-6 text-[0.85rem] leading-relaxed text-muted-foreground">
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { LiquidGlass } from "@liquidglass/react";
 import aboutImg from "@/assets/about-detail.jpg";
 import { Reveal } from "./Reveal";
 
@@ -17,13 +18,25 @@ export function About() {
               className="aspect-4/5 w-full object-cover transition-transform duration-[1.2s] hover:scale-[1.04]"
             />
           </div>
-          <div className="glass-strong absolute bottom-0 right-0 rounded-sm px-6 py-5 sm:-bottom-6 sm:right-auto sm:-left-6">
-            <p className="font-display text-3xl font-bold leading-none text-primary">5+</p>
-            <p className="mt-2 text-[0.6rem] uppercase tracking-[0.22em] text-muted-foreground">
-              Years
-              <br />
-              Experience
-            </p>
+          <div className="absolute bottom-0 right-0 sm:-bottom-6 sm:right-auto sm:-left-6">
+            <LiquidGlass
+              borderRadius={2}
+              blur={14}
+              contrast={1.18}
+              brightness={1.05}
+              saturation={1.25}
+              displacementScale={1.1}
+              elasticity={0.6}
+              zIndex={5}
+              className="!items-start !justify-start glass-sheen shadow-lift px-6 py-5 bg-background/80"
+            >
+              <p className="font-display text-3xl font-bold leading-none text-primary">5+</p>
+              <p className="mt-2 text-[0.6rem] uppercase tracking-[0.22em] text-muted-foreground">
+                Years
+                <br />
+                Experience
+              </p>
+            </LiquidGlass>
           </div>
         </Reveal>
 

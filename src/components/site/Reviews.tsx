@@ -15,7 +15,7 @@ export function Reviews() {
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             {reviews.map((r, i) => (
               <Reveal key={r.name + i} delay={i * 0.06}>
-                <figure className="glass h-full rounded-sm p-8">
+                <figure className="glass-card glass-sheen h-full rounded-sm p-8">
                   {typeof r.rating === "number" && (
                     <div className="flex gap-1" aria-label={`${r.rating} out of 5`}>
                       {Array.from({ length: r.rating }).map((_, s) => (
@@ -36,7 +36,7 @@ export function Reviews() {
           </div>
         ) : (
           <Reveal delay={0.1}>
-            <div className="glass mt-14 rounded-sm p-10 sm:p-14">
+            <div className="glass-panel glass-sheen mt-14 rounded-sm p-10 sm:p-14">
               <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
                 Verified customer reviews will appear here. We publish only real feedback from
                 commercial clients — no invented testimonials or ratings.

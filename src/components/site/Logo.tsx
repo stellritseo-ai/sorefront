@@ -17,16 +17,6 @@ export function Logo({ tone = "dark" }: { tone?: "dark" | "light" }) {
         <path d="M8 20h24" className="stroke-primary" strokeWidth="1.2" />
         <path d="M17 19v3M23 19v3" className="stroke-primary" strokeWidth="1.6" />
       </svg>
-      <span className="flex flex-col leading-none">
-        <span
-          className={`font-display text-[0.95rem] font-extrabold uppercase tracking-[0.12em] ${mark}`}
-        >
-          Sore Fronts
-        </span>
-        <span className={`mt-1 text-[0.58rem] uppercase tracking-[0.34em] ${sub}`}>
-          Of Dallas
-        </span>
-      </span>
     </span>
   );
 }

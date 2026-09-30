@@ -5,7 +5,7 @@ import { site, serviceOptions } from "@/data/site";
 import { Reveal } from "./Reveal";
 
 const field =
-  "w-full rounded-sm border border-input bg-background/70 px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary";
+  "w-full rounded-sm glass-input px-4 py-3 text-sm text-foreground outline-none placeholder:text-muted-foreground/70";
 const labelCls =
   "mb-2 block text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-foreground";
 
@@ -105,7 +105,7 @@ export function Contact() {
         </div>
 
         <Reveal delay={0.15} className="lg:col-span-7">
-          <form onSubmit={onSubmit} className="glass rounded-sm p-7 sm:p-10">
+          <form onSubmit={onSubmit} className="glass-panel glass-sheen shadow-lift rounded-sm p-7 sm:p-10">
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label className={labelCls} htmlFor="name">

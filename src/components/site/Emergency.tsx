@@ -17,9 +17,10 @@ export function Emergency() {
       <div className="absolute inset-0 bg-charcoal/70" />
       <div className="relative mx-auto grid max-w-[86rem] gap-12 px-5 py-24 sm:px-8 sm:py-32 lg:grid-cols-2 lg:items-end">
         <Reveal>
-          <p className="text-[0.66rem] font-medium uppercase tracking-[0.28em] text-background/70">
+          <span className="glass-pill inline-flex items-center gap-2 rounded-full px-3.5 py-1 text-[0.66rem] font-medium uppercase tracking-[0.24em] text-background">
+            <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-destructive" />
             Emergency service
-          </p>
+          </span>
           <h2 className="display-lg mt-5 text-background">
             Commercial glass emergency?
             <br />
@@ -42,7 +43,7 @@ export function Emergency() {
             </a>
             <a
               href="#contact"
-              className="glass-dark group inline-flex items-center gap-3 rounded-sm px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-background transition-colors duration-300 hover:bg-background/15"
+              className="glass-dark-interactive group inline-flex items-center gap-3 rounded-sm px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-background"
             >
               Request emergency service
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

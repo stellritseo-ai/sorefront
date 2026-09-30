@@ -38,12 +38,12 @@ export function Projects() {
                   loading="lazy"
                   className={`h-full w-full object-cover ${p.ratio} transition-transform duration-[900ms] ease-out group-hover:scale-[1.06]`}
                 />
-                <figcaption className="absolute inset-0 flex items-end bg-charcoal/0 p-6 transition-colors duration-500 group-hover:bg-charcoal/45">
-                  <span className="flex w-full items-center justify-between opacity-0 transition-all duration-500 group-hover:opacity-100">
+                <figcaption className="absolute inset-0 flex items-end bg-charcoal/0 p-4 transition-colors duration-500 group-hover:bg-charcoal/30 sm:p-5">
+                  <span className="glass-dark glass-sheen shadow-lift flex w-full translate-y-2 items-center justify-between rounded-sm px-4 py-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     <span className="text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-background">
                       {p.cat}
                     </span>
-                    <ArrowUpRight className="h-5 w-5 text-background" />
+                    <ArrowUpRight className="h-4.5 w-4.5 text-background transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
                 </figcaption>
               </figure>

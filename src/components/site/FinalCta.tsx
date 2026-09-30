@@ -17,7 +17,7 @@ export function FinalCta() {
       <div className="absolute inset-0 bg-charcoal/35" />
       <div className="relative mx-auto max-w-[86rem] px-5 py-24 sm:px-8 sm:py-32">
         <Reveal>
-          <div className="glass-strong max-w-2xl rounded-sm p-9 sm:p-12">
+          <div className="glass-panel glass-sheen shadow-lift max-w-2xl rounded-sm p-9 sm:p-12">
             <h2 className="display-md">
               Your commercial glass.
               <br />
@@ -37,7 +37,7 @@ export function FinalCta() {
               </a>
               <a
                 href={site.phoneHref}
-                className="inline-flex items-center gap-3 rounded-sm border border-foreground/20 px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-foreground transition-colors duration-300 hover:bg-secondary"
+                className="glass-subtle inline-flex items-center gap-3 rounded-sm px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-foreground transition-all duration-300 hover:bg-background/80 hover:shadow-soft"
               >
                 <Phone className="h-4 w-4" />
                 Call {site.phone}
