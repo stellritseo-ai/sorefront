@@ -14,7 +14,7 @@ export function TrustStrip() {
   return (
     <section className="glass-subtle border-y border-border">
       <div className="mx-auto max-w-[86rem] px-5 sm:px-8">
-        <ul className="grid grid-cols-2 gap-x-6 divide-border sm:grid-cols-3 lg:grid-cols-6 lg:divide-x">
+        <ul className="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-0 divide-border lg:divide-x">
           {items.map(({ icon: Icon, label }, i) => (
             <Reveal key={label} delay={i * 0.05}>
               <li className="flex items-center gap-3 py-5 lg:justify-center lg:px-4">

@@ -11,6 +11,7 @@
  */
 
 @theme inline {
+  --breakpoint-xs: 23.5rem;
   --radius-sm: calc(var(--radius) - 1px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
@@ -132,6 +133,8 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
@@ -140,6 +143,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    max-width: 100%;
   }
 
   h1,
@@ -329,3 +333,71 @@
   word-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* Infinite Marquee Animation with Hover Pause */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee:focus-within {
+  animation-play-state: paused;
+}
+
+@utility mask-fade-edges {
+  mask-image: linear-gradient(to right, transparent 0%, black 56px, black calc(100% - 56px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 56px, black calc(100% - 56px), transparent 100%);
+}
+
+/* Dual Marquee Track Animations with Hover Pause (Brown Project style) */
+@keyframes marquee-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 34s linear infinite;
+  will-change: transform;
+  display: flex;
+  width: max-content;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 34s linear infinite;
+  will-change: transform;
+  display: flex;
+  width: max-content;
+}
+
+.pause-on-hover:hover .animate-marquee-left,
+.pause-on-hover:hover .animate-marquee-right,
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+

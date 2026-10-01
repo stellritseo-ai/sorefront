@@ -21,6 +21,7 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Reviews", href: "#reviews" },
   // { label: "FAQ", href: "#faq" },
+  { label: "Free Estimate", href: "#contact" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -88,42 +89,146 @@ export const whyUs = [
   {
     n: "01",
     title: "Commercial Specialists",
-    desc: "Focused specifically on commercial glass door and window solutions.",
+    desc: "100% focused on commercial glass doors, storefronts, and business facilities — never residential.",
+    tag: "B2B Exclusivity",
+    stat: "100%",
+    statLabel: "Commercial Focus",
+    code: "B2B EXCLUSIVE",
   },
   {
     n: "02",
     title: "24/7 Emergency Response",
-    desc: "Commercial glass emergencies can happen outside normal business hours.",
+    desc: "Immediate mobile glazier mobilization for break-ins, vehicle impacts, and security board-ups.",
+    tag: "Rapid Mobilization",
+    stat: "< 60 min",
+    statLabel: "Target Dispatch",
+    code: "24/7 DISPATCH",
   },
   {
     n: "03",
     title: "Licensed · Insured · Bonded",
-    desc: "Professional service with business-ready credentials.",
+    desc: "Comprehensive Texas commercial liability coverage, workman's comp, and surety bonding.",
+    tag: "Total Protection",
+    stat: "$2,000,000",
+    statLabel: "Liability Policy",
+    code: "TEXAS VERIFIED",
   },
   {
     n: "04",
-    title: "5+ Years Experience",
-    desc: "Experienced with commercial glass installations and repairs.",
+    title: "5+ Years DFW Glazing",
+    desc: "Extensive track record engineering heavy tempered glass, pivot hinges, and curtain wall packages.",
+    tag: "Proven Craft",
+    stat: "5+ Yrs",
+    statLabel: "DFW Track Record",
+    code: "MASTER GLAZIERS",
   },
   {
     n: "05",
-    title: "50-Mile Service Area",
-    desc: "Serving Dallas and surrounding commercial properties.",
+    title: "50-Mile DFW Service Radius",
+    desc: "Fully equipped mobile glazier units serving Dallas, Plano, Fort Worth, Irving, Arlington, and surrounding cities.",
+    tag: "Metro Coverage",
+    stat: "50 Mi",
+    statLabel: "Dispatched Fleet",
+    code: "NORTH TEXAS FLEET",
   },
   {
     n: "06",
-    title: "Free Estimates",
-    desc: "Clear project assessment before work begins.",
+    title: "Transparent Free Estimates",
+    desc: "Thorough on-site assessment, code evaluation, and itemized bids before any work commences.",
+    tag: "Zero Obligation",
+    stat: "$0",
+    statLabel: "Upfront Assessment",
+    code: "ITEMIZED BIDS",
+  },
+  {
+    n: "07",
+    title: "Turnkey Commercial Hardware",
+    desc: "Heavy-duty pivots, hydraulic door closers, continuous gear hinges & panic exit devices.",
+    tag: "Grade 1 Hardware",
+    stat: "1M+ Ops",
+    statLabel: "Tested Closers",
+    code: "ANSI GRADE 1",
+  },
+  {
+    n: "08",
+    title: "IBC & ADA Code Compliant",
+    desc: "Strict adherence to Texas International Building Code, egress requirements & safety standards.",
+    tag: "Texas Code",
+    stat: "100%",
+    statLabel: "Code Compliant",
+    code: "TEXAS IBC & ADA",
   },
 ];
 
-export const processSteps = [
-  { n: "01", title: "Consultation", desc: "Understand the commercial property and project requirements." },
-  { n: "02", title: "Site Assessment", desc: "Evaluate the existing glass, doors, frames and hardware." },
-  { n: "03", title: "Recommendation", desc: "Provide the appropriate commercial solution and estimate." },
-  { n: "04", title: "Installation / Repair", desc: "Professional execution with attention to detail." },
-  { n: "05", title: "Final Inspection", desc: "Review the completed work and ensure everything operates properly." },
+export interface ProcessStep {
+  n: string;
+  sectionLabel: string;
+  title: string;
+  desc: string;
+  accentHex: string;
+  glowColor: string;
+  color: string;
+}
+
+export const processSteps: ProcessStep[] = [
+  {
+    n: "01",
+    sectionLabel: "1 Section",
+    title: "Consultation",
+    desc: "Understand commercial property layout, foot traffic demands, and architectural scope.",
+    accentHex: "#E11D48",
+    glowColor: "rgba(225, 29, 72, 0.35)",
+    color: "from-rose-500 to-red-600",
+  },
+  {
+    n: "02",
+    sectionLabel: "2 Section",
+    title: "Site Assessment",
+    desc: "Millimeter laser measurement, framing deflection audit, and hydraulic closer testing.",
+    accentHex: "#0D9488",
+    glowColor: "rgba(13, 148, 136, 0.35)",
+    color: "from-teal-500 to-emerald-600",
+  },
+  {
+    n: "03",
+    sectionLabel: "3 Section",
+    title: "Plan & Submittal",
+    desc: "Architectural drawings, glass performance specs, and itemized binding cost proposals.",
+    accentHex: "#0284C7",
+    glowColor: "rgba(2, 132, 199, 0.35)",
+    color: "from-blue-500 to-sky-600",
+  },
+  {
+    n: "04",
+    sectionLabel: "4 Section",
+    title: "Custom Fabrication",
+    desc: "Heavy tempered glass cutting, anodized extrusions, and certified hardware assembly.",
+    accentHex: "#EA580C",
+    glowColor: "rgba(234, 88, 12, 0.35)",
+    color: "from-amber-500 to-orange-600",
+  },
+  {
+    n: "05",
+    sectionLabel: "5 Section",
+    title: "Certified Glazing",
+    desc: "OSHA-certified installation, clean jobsite barriers, and structural silicone seals.",
+    accentHex: "#0284C7",
+    glowColor: "rgba(2, 132, 199, 0.35)",
+    color: "from-sky-500 to-blue-600",
+  },
+  {
+    n: "06",
+    sectionLabel: "6 Section",
+    title: "Final Inspection",
+    desc: "40-point walk-through, ADA compliance check, latch tests, and warranty handover.",
+    accentHex: "#EAB308",
+    glowColor: "rgba(234, 179, 8, 0.35)",
+    color: "from-amber-400 to-yellow-500",
+  },
 ];
+
+
+
 
 export const projectCategories = [
   "Storefronts",
@@ -132,6 +237,91 @@ export const projectCategories = [
   "Commercial Entrances",
   "Glass Doors",
   "Glass Windows",
+];
+
+export interface CommercialProject {
+  id: string;
+  cat: string;
+  title: string;
+  location: string;
+  spec: string;
+  year: string;
+  imgKey: "storefront" | "facade" | "lobby" | "doors" | "windows" | "hardware" | "install" | "emergency";
+}
+
+export const projectsData: CommercialProject[] = [
+  {
+    id: "p1",
+    cat: "Storefronts",
+    title: "Flagship Retail Storefront Facade",
+    location: "Dallas Design District, TX",
+    spec: "Flush Glazing · 1/2\" Heavy Tempered Glass · Anodized Framing",
+    year: "2024",
+    imgKey: "storefront",
+  },
+  {
+    id: "p2",
+    cat: "Office Buildings",
+    title: "Corporate Curtain Wall & Facade",
+    location: "Uptown Dallas, TX",
+    spec: "Insulated Solar Control Low-E · Structural Silicone Glazing",
+    year: "2024",
+    imgKey: "facade",
+  },
+  {
+    id: "p3",
+    cat: "Commercial Entrances",
+    title: "Executive Lobby Glass Enclosure",
+    location: "Plano Commercial Center, TX",
+    spec: "Heavy Tempered All-Glass System · Hydraulic In-Floor Closers",
+    year: "2024",
+    imgKey: "lobby",
+  },
+  {
+    id: "p4",
+    cat: "Retail",
+    title: "High-Traffic Entrance Doors",
+    location: "Preston Hollow, Dallas, TX",
+    spec: "Continuous Gear Hinges · Heavy-Duty Panic Exit Hardware",
+    year: "2024",
+    imgKey: "doors",
+  },
+  {
+    id: "p5",
+    cat: "Glass Doors",
+    title: "Commercial Pivot Door Hardware Tuning",
+    location: "Fort Worth Business District, TX",
+    spec: "ANSI Grade 1 Closers · Threshold Leveling & Pivot Alignment",
+    year: "2024",
+    imgKey: "hardware",
+  },
+  {
+    id: "p6",
+    cat: "Glass Windows",
+    title: "Thermal Storefront Window Units",
+    location: "Irving Technology Park, TX",
+    spec: "Texas SHGC Compliant · Dual-Pane Acoustic Insulation",
+    year: "2024",
+    imgKey: "windows",
+  },
+  {
+    id: "p7",
+    cat: "Storefronts",
+    title: "Architectural Mullion & Frame Assembly",
+    location: "Addison Tech Corridor, TX",
+    spec: "Heavy Anodized Extrusions · High-Load Structural Fasteners",
+    year: "2024",
+    imgKey: "install",
+  },
+  {
+    id: "p8",
+    cat: "Commercial Entrances",
+    title: "24/7 Mobile Glass Replacement",
+    location: "North Dallas Commercial Plaza, TX",
+    spec: "Rapid Mobilization Unit · Same-Day Secure Board-Up & Fab",
+    year: "2024",
+    imgKey: "emergency",
+  },
 ];
 
 /**
