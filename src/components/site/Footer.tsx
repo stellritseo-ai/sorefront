@@ -559,7 +559,7 @@ export function Footer() {
         </div>
 
         {/* ── BOTTOM BAR (COPYRIGHT, TRUST SUMMARY & BACK TO TOP) ── */}
-        <div className="border-t border-white/10 px-5 sm:px-8 lg:px-12 py-6 bg-black/40">
+        <div className="border-t border-white/10 px-5 sm:px-8 lg:px-12 pt-6 pb-[20px] bg-black/40">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             {/* Copyright Info */}
             <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-xs text-slate-400 font-medium order-2 sm:order-1">
