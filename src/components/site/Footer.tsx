@@ -149,7 +149,7 @@ function MobileCollapsibleSection({
 export function Footer() {
   return (
     <footer
-      className="relative overflow-hidden rounded-[14px] bg-[#10141C] text-white border border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.45)] max-w-[94rem] mx-3 my-4 sm:mx-6 sm:my-8 lg:mx-auto lg:my-12 transition-all"
+      className="relative overflow-hidden bg-[#10141C] text-white border-t border-slate-800 shadow-[0_-4px_30px_rgba(0,0,0,0.35)] w-full mt-6 sm:mt-10 lg:mt-14 transition-all"
     >
       {/* ── Background Subtle Aesthetics & Glows ── */}
       <div
@@ -179,7 +179,7 @@ export function Footer() {
       <div className="relative z-10">
         {/* ── TOP RAPID DISPATCH & EMERGENCY SUPPORT BANNER ── */}
         <div className="border-b border-white/10 bg-white/[0.025] px-5 sm:px-8 lg:px-12 py-6 sm:py-7">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 sm:gap-6">
+          <div className="max-w-[94rem] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5 sm:gap-6">
             {/* Left status badge & headline */}
             <div className="space-y-1.5 max-w-2xl text-left">
               <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/15 border border-emerald-500/30 px-3 py-1 text-[10.5px] font-black uppercase tracking-wider text-emerald-400">
@@ -228,7 +228,7 @@ export function Footer() {
         </div>
 
         {/* ── MOBILE COLLAPSIBLE VERSION ── */}
-        <div className="block lg:hidden px-5 sm:px-8 py-8 sm:py-10 text-left">
+        <div className="block lg:hidden px-5 sm:px-8 py-8 sm:py-10 text-left max-w-[94rem] mx-auto">
           {/* Logo & Description */}
           <div className="mb-6">
             <div className="flex items-center gap-3 mb-4">
@@ -378,7 +378,7 @@ export function Footer() {
         </div>
 
         {/* ── DESKTOP VERSION (4-COLUMN ARCHITECTURE) ── */}
-        <div className="hidden lg:grid lg:grid-cols-12 gap-8 px-8 lg:px-12 py-14 sm:py-16 items-start text-left">
+        <div className="hidden lg:grid lg:grid-cols-12 gap-8 px-8 lg:px-12 py-14 sm:py-16 items-start text-left max-w-[94rem] mx-auto">
           {/* Col 1: Brand & Credibility Badges (col-span-4) */}
           <div className="lg:col-span-4 space-y-5">
             <div className="flex items-center gap-3">
@@ -559,8 +559,8 @@ export function Footer() {
         </div>
 
         {/* ── BOTTOM BAR (COPYRIGHT, TRUST SUMMARY & BACK TO TOP) ── */}
-        <div className="border-t border-white/10 px-5 sm:px-8 lg:px-12 pt-6 pb-[20px] bg-black/40">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="border-t border-white/10 bg-black/40">
+          <div className="max-w-[94rem] mx-auto px-5 sm:px-8 lg:px-12 pt-6 pb-[20px] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
             {/* Copyright Info */}
             <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-xs text-slate-400 font-medium order-2 sm:order-1">
               <p>
