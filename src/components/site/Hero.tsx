@@ -82,7 +82,7 @@ export function Hero() {
         >
           {/* Primary Free Estimate Button */}
           <a
-            href="#contact"
+            href="/free-estimate"
             className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-3 text-[0.74rem] font-bold uppercase tracking-[0.12em] text-primary-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.45),0_6px_20px_rgba(185,28,28,0.38)] transition-all duration-300 hover:brightness-110 hover:shadow-[inset_0_1px_2px_rgba(255,255,255,0.6),0_8px_26px_rgba(185,28,28,0.48)] active:scale-[0.98]"
           >
             Get a Free Estimate

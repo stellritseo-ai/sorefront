@@ -29,7 +29,7 @@ export function FinalCta() {
             </p>
             <div className="mt-6 sm:mt-8 flex flex-col xs:flex-row flex-wrap gap-3">
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="group inline-flex items-center justify-center gap-3 rounded-xl xs:rounded-sm bg-primary px-6 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary-foreground transition-all duration-300 hover:shadow-lift w-full xs:w-auto"
               >
                 Get a free estimate

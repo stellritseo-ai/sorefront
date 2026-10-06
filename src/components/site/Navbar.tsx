@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { useLocation } from "@tanstack/react-router";
 import {
   Menu,
   X,
@@ -30,6 +31,15 @@ const serviceIcons: Record<string, typeof DoorClosed> = {
 };
 
 export function Navbar() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const isAbout = location.pathname === "/about";
+  const isReviews = location.pathname === "/reviews";
+  const isEstimate = location.pathname === "/free-estimate";
+  const isContact = location.pathname === "/contact";
+  const isProjects = location.pathname === "/projects";
+  const isServices = location.pathname.startsWith("/services");
+
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -37,6 +47,20 @@ export function Navbar() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const servicesRef = useRef<HTMLLIElement | null>(null);
   const [dropdownCoords, setDropdownCoords] = useState<{ top: number; left: number } | null>(null);
+
+  const getHref = (l: { label: string; href: string }) => {
+    if (l.label === "About") return "/about";
+    if (l.label === "Reviews") return "/reviews";
+    if (l.label === "Projects") return "/projects";
+    if (l.label === "Services") return "/services";
+    if (l.label === "Free Estimate") return "/free-estimate";
+    if (l.label === "Contact") return "/contact";
+    if (l.label === "Home") return isHome ? "#home" : "/";
+    if (isHome) {
+      return l.href.startsWith("/#") ? l.href.replace("/", "") : l.href;
+    }
+    return l.href;
+  };
 
   const updateCoords = () => {
     if (servicesRef.current) {
@@ -111,7 +135,7 @@ export function Navbar() {
 
           {/* Brand Logo */}
           <a
-            href="#home"
+            href={isHome ? "#home" : "/"}
             className="relative z-10 shrink-0 flex items-center transition-all duration-300 hover:opacity-95 hover:scale-[1.02] active:scale-[0.98]"
             aria-label={`${site.name} — home`}
           >
@@ -121,6 +145,15 @@ export function Navbar() {
           {/* Navigation Links */}
           <ul className="relative z-10 hidden items-center gap-1 ml-auto mr-0 lg:flex">
             {navLinks.map((l) => {
+              const linkHref = getHref(l);
+              const isActive =
+                (l.label === "About" && isAbout) ||
+                (l.label === "Reviews" && isReviews) ||
+                (l.label === "Projects" && isProjects) ||
+                (l.label === "Free Estimate" && isEstimate) ||
+                (l.label === "Contact" && isContact) ||
+                (l.label === "Home" && isHome && !scrolled);
+
               if (l.label === "Services") {
                 return (
                   <li
@@ -131,12 +164,16 @@ export function Navbar() {
                     onMouseLeave={handleMouseLeave}
                   >
                     <a
-                      href={l.href}
+                      href={linkHref}
                       onClick={() => setServicesOpen(false)}
                       className={`relative inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[15px] font-semibold capitalize tracking-normal transition-all duration-200 active:scale-[0.97] ${
-                        scrolled
-                          ? "text-slate-900 hover:text-primary hover:bg-black/[0.05]"
-                          : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)]"
+                        isServices
+                          ? scrolled
+                            ? "bg-primary/10 text-primary font-bold shadow-xs ring-1 ring-primary/20"
+                            : "bg-white/25 text-white font-bold shadow-[inset_0_1px_1px_rgba(255,255,255,0.75),0_2px_8px_rgba(0,0,0,0.12)]"
+                          : scrolled
+                            ? "text-slate-900 hover:text-primary hover:bg-black/[0.05]"
+                            : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)]"
                       } ${servicesOpen ? (scrolled ? "text-primary bg-black/[0.05]" : "bg-white/25") : ""}`}
                     >
                       {l.label}
@@ -153,11 +190,15 @@ export function Navbar() {
               return (
                 <li key={l.label}>
                   <a
-                    href={l.href}
+                    href={linkHref}
                     className={`relative inline-flex items-center rounded-full px-3.5 py-1.5 text-[15px] font-semibold capitalize tracking-normal transition-all duration-200 active:scale-[0.97] ${
-                      scrolled
-                        ? "text-slate-900 hover:text-primary hover:bg-black/[0.05]"
-                        : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)]"
+                      isActive
+                        ? scrolled
+                          ? "bg-primary/10 text-primary font-bold shadow-xs ring-1 ring-primary/20"
+                          : "bg-white/25 text-white font-bold shadow-[inset_0_1px_1px_rgba(255,255,255,0.75),0_2px_8px_rgba(0,0,0,0.12)]"
+                        : scrolled
+                          ? "text-slate-900 hover:text-primary hover:bg-black/[0.05]"
+                          : "text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)] hover:bg-white/20 hover:text-white hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_2px_8px_rgba(0,0,0,0.06)]"
                     }`}
                   >
                     {l.label}
@@ -255,7 +296,7 @@ export function Navbar() {
                 return (
                   <a
                     key={s.n}
-                    href="#services"
+                    href={`/services/${s.slug}`}
                     onClick={() => setServicesOpen(false)}
                     className="group/item flex items-start gap-2.5 rounded-xl p-2 transition-all duration-200 hover:bg-slate-100/80 hover:shadow-xs border border-transparent hover:border-slate-200/70"
                   >
@@ -297,7 +338,7 @@ export function Navbar() {
                 </span>
               </div>
               <a
-                href="#services"
+                href="/services"
                 onClick={() => setServicesOpen(false)}
                 className="inline-flex items-center gap-1 text-[11px] font-bold text-[#724c37] hover:underline"
               >
@@ -329,14 +370,25 @@ export function Navbar() {
             <div className="pointer-events-none absolute inset-x-0 top-0 h-[40%] bg-gradient-to-b from-white/30 to-transparent" />
             <ul className="relative z-10 grid gap-1">
               {navLinks.map((l) => {
+                const linkHref = getHref(l);
+                const isActive =
+                  (l.label === "About" && isAbout) ||
+                  (l.label === "Reviews" && isReviews) ||
+                  (l.label === "Projects" && isProjects) ||
+                  (l.label === "Free Estimate" && isEstimate) ||
+                  (l.label === "Contact" && isContact) ||
+                  (l.label === "Home" && isHome);
+
                 if (l.label === "Services") {
                   return (
                     <li key={l.label} className="rounded-md border-b border-black/10">
                       <div className="flex items-center justify-between px-4 py-3">
                         <a
-                          href={l.href}
+                          href="/services"
                           onClick={() => setOpen(false)}
-                          className="text-[15px] font-semibold capitalize tracking-normal transition-all text-black hover:text-primary"
+                          className={`text-[15px] font-semibold capitalize tracking-normal transition-all text-black hover:text-primary ${
+                            isServices ? "font-bold text-primary" : ""
+                          }`}
                         >
                           {l.label}
                         </a>
@@ -362,7 +414,7 @@ export function Navbar() {
                             return (
                               <li key={s.n}>
                                 <a
-                                  href="#services"
+                                  href={`/services/${s.slug}`}
                                   onClick={() => setOpen(false)}
                                   className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-[13px] font-medium transition-colors text-black hover:text-primary hover:bg-black/5"
                                 >
@@ -381,9 +433,11 @@ export function Navbar() {
                 return (
                   <li key={l.label}>
                     <a
-                      href={l.href}
+                      href={linkHref}
                       onClick={() => setOpen(false)}
-                      className="block rounded-md border-b border-black/10 px-4 py-3 text-[15px] font-semibold capitalize tracking-normal transition-all hover:pl-5 text-black hover:text-primary hover:bg-black/5"
+                      className={`block rounded-md border-b border-black/10 px-4 py-3 text-[15px] font-semibold capitalize tracking-normal transition-all hover:pl-5 text-black hover:text-primary hover:bg-black/5 ${
+                        isActive ? "bg-black/5 font-bold text-primary pl-5" : ""
+                      }`}
                     >
                       {l.label}
                     </a>

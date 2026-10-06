@@ -138,7 +138,7 @@ export function About() {
 
                       <div className="mt-3 flex flex-col gap-2 pt-2 border-t border-white/15">
                         <a
-                          href="#contact"
+                          href="/free-estimate"
                           className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-primary to-[#b91c1c] px-2.5 py-1.5 text-[0.62rem] font-bold uppercase tracking-wider text-white shadow-md hover:brightness-110 active:scale-95 transition-all"
                         >
                           <span>Get Free Quote</span>
@@ -295,10 +295,14 @@ export function About() {
           <div className="lg:col-span-7">
             <Reveal>
               {/* Category Pill */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-3.5 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary backdrop-blur-sm">
+              <a
+                href="/about"
+                className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-3.5 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary backdrop-blur-sm hover:bg-primary/15 transition-colors group cursor-pointer"
+              >
                 <Building2 className="h-3.5 w-3.5" />
                 <span>About Sore Fronts Of Dallas</span>
-              </div>
+                <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+              </a>
 
               {/* Main Headline */}
               <h2 className="font-display mt-2 sm:mt-[9px] text-[23px] sm:text-[35px] font-extrabold tracking-tight text-foreground leading-[1.2]">
@@ -348,11 +352,19 @@ export function About() {
             <Reveal delay={0.2}>
               <div className="mt-8 flex flex-wrap items-center gap-3.5 pt-2">
                 <a
-                  href="#contact"
+                  href="/free-estimate"
                   className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-2.5 text-[0.76rem] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.45),0_4px_16px_rgba(185,28,28,0.35)] transition-all duration-300 hover:brightness-110 hover:shadow-[inset_0_1px_2px_rgba(255,255,255,0.6),0_6px_22px_rgba(185,28,28,0.45)] active:scale-[0.98]"
                 >
                   <span>Request Free Estimate</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                </a>
+
+                <a
+                  href="/about"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4.5 py-2.5 text-[0.76rem] font-bold uppercase tracking-[0.12em] text-foreground shadow-soft backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:bg-white active:scale-[0.98] dark:border-border dark:bg-card/70"
+                >
+                  <Building2 className="h-3.5 w-3.5 text-primary" />
+                  <span>Our Story</span>
                 </a>
 
                 <a

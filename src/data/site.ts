@@ -2,8 +2,8 @@ export const site = {
   name: "Sore Fronts Of Dallas",
   phone: "(469) 360-5805",
   phoneHref: "tel:+14693605805",
-  email: "info@Sorefrontsofdallas.com",
-  emailHref: "mailto:info@Sorefrontsofdallas.com",
+  email: "support@sorefrontsofdallas.com",
+  emailHref: "mailto:support@sorefrontsofdallas.com",
   address: {
     street: "10830 N. Central Expressway Ste. 130",
     city: "Dallas",
@@ -15,14 +15,14 @@ export const site = {
 };
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Reviews", href: "#reviews" },
-  // { label: "FAQ", href: "#faq" },
-  { label: "Free Estimate", href: "#contact" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Reviews", href: "/reviews" },
+  // { label: "FAQ", href: "/#faq" },
+  { label: "Free Estimate", href: "/free-estimate" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const trustPoints = [
@@ -37,48 +37,56 @@ export const trustPoints = [
 export const services = [
   {
     n: "01",
+    slug: "commercial-glass-door-installation",
     title: "Commercial Glass Door Installation",
     desc: "New glass entrance doors engineered for daily commercial traffic.",
     img: "doors",
   },
   {
     n: "02",
+    slug: "commercial-glass-door-repair",
     title: "Commercial Glass Door Repair",
     desc: "Alignment, closers, pivots and glass panel repair on existing doors.",
     img: "hardware",
   },
   {
     n: "03",
+    slug: "storefront-glass-installation",
     title: "Storefront Glass Installation",
     desc: "Aluminum storefront systems and full glazing packages.",
     img: "storefront",
   },
   {
     n: "04",
+    slug: "storefront-glass-repair",
     title: "Storefront Glass Repair",
     desc: "Damaged storefront glass assessed, secured and restored.",
     img: "storefront",
   },
   {
     n: "05",
+    slug: "commercial-glass-windows",
     title: "Commercial Glass Windows",
     desc: "Window installation and replacement for offices and retail buildings.",
     img: "windows",
   },
   {
     n: "06",
+    slug: "emergency-commercial-glass-service",
     title: "Emergency Commercial Glass Service",
     desc: "Round-the-clock response for break-ins, impacts and failures.",
     img: "night",
   },
   {
     n: "07",
+    slug: "commercial-door-hardware",
     title: "Commercial Door Hardware",
     desc: "Closers, locks, panic hardware, hinges and thresholds serviced.",
     img: "hardware",
   },
   {
     n: "08",
+    slug: "glass-replacement-and-maintenance",
     title: "Glass Replacement & Maintenance",
     desc: "Scheduled maintenance and replacement for commercial properties.",
     img: "doors",

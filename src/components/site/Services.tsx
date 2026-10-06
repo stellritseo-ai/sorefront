@@ -96,10 +96,14 @@ export function Services() {
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
           <Reveal className="min-w-0">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-3.5 py-1 text-[0.68rem] xs:text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary backdrop-blur-sm">
+            <a
+              href="/services"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-3.5 py-1 text-[0.68rem] xs:text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary backdrop-blur-sm hover:bg-primary/15 transition-colors group cursor-pointer"
+            >
               <Wrench className="h-3.5 w-3.5 shrink-0" />
               <span>Full-Scope Commercial Capabilities</span>
-            </div>
+              <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+            </a>
 
             {/* Heading */}
             <h2 className="font-display mt-2 sm:mt-[9px] text-2xl xs:text-[26px] sm:text-[34px] lg:text-[40px] font-extrabold tracking-tight text-foreground leading-[1.16]">
@@ -116,6 +120,14 @@ export function Services() {
           <Reveal delay={0.12}>
             <div className="hidden items-center gap-3 md:flex shrink-0">
               <a
+                href="/services"
+                className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-white/70 px-4 py-2.5 text-[0.74rem] font-bold uppercase tracking-[0.12em] text-foreground shadow-soft backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:bg-white active:scale-[0.98]"
+              >
+                <span>All Services</span>
+                <ArrowUpRight className="h-3.5 w-3.5 text-primary shrink-0" />
+              </a>
+
+              <a
                 href={site.phoneHref}
                 className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-white/70 px-4 py-2.5 text-[0.74rem] font-bold uppercase tracking-[0.12em] text-foreground shadow-soft backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:bg-white active:scale-[0.98]"
               >
@@ -124,7 +136,7 @@ export function Services() {
               </a>
 
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-2.5 text-[0.74rem] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.45),0_4px_16px_rgba(185,28,28,0.35)] transition-all duration-300 hover:brightness-110 active:scale-[0.98]"
               >
                 <span className="whitespace-nowrap">Request Free Estimate</span>
@@ -137,18 +149,18 @@ export function Services() {
         {/* ── Mobile CTA Buttons (hidden md+) ── */}
         <div className="mt-5 grid grid-cols-1 xs:grid-cols-2 gap-3 md:hidden">
           <a
-            href="#contact"
+            href="/free-estimate"
             className="group inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-3 text-[0.74rem] font-bold uppercase tracking-[0.12em] text-primary-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.45),0_4px_16px_rgba(185,28,28,0.35)] transition-all duration-300 hover:brightness-110 active:scale-[0.98]"
           >
             <span>Free Estimate</span>
             <ArrowRight className="h-3.5 w-3.5 shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
           <a
-            href={site.phoneHref}
+            href="/services"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-border/80 bg-white/70 px-4 py-3 text-[0.74rem] font-bold uppercase tracking-[0.12em] text-foreground shadow-soft backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:bg-white active:scale-[0.98]"
           >
-            <Phone className="h-3.5 w-3.5 text-primary shrink-0" />
-            <span className="truncate">{site.phone}</span>
+            <span>All Services</span>
+            <ArrowUpRight className="h-3.5 w-3.5 text-primary shrink-0" />
           </a>
         </div>
 
@@ -386,7 +398,15 @@ export function Services() {
                     {/* Buttons row */}
                     <div className="flex flex-wrap items-center gap-2">
                       <a
-                        href="#contact"
+                        href={`/services/${activeService.slug}`}
+                        className="group inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 hover:bg-primary px-3.5 xs:px-4 py-2 xs:py-2.5 text-[0.70rem] xs:text-[0.74rem] font-extrabold uppercase tracking-[0.08em] text-primary hover:text-white transition-all duration-300 active:scale-[0.98] shrink-0"
+                      >
+                        <span>Full Specs &amp; Details</span>
+                        <ArrowUpRight className="h-3.5 w-3.5 shrink-0 transition-transform duration-300 group-hover:rotate-45" />
+                      </a>
+
+                      <a
+                        href="/free-estimate"
                         className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-4 xs:px-5 py-2 xs:py-2.5 text-[0.72rem] xs:text-[0.76rem] font-extrabold uppercase tracking-[0.10em] xs:tracking-[0.12em] text-primary-foreground shadow-[0_4px_16px_rgba(185,28,28,0.35),inset_0_1px_1.5px_rgba(255,255,255,0.45)] transition-all duration-300 hover:brightness-110 active:scale-[0.98] shrink-0"
                       >
                         <span className="whitespace-nowrap">Free Estimate</span>
@@ -400,11 +420,6 @@ export function Services() {
                         <Phone className="h-3.5 w-3.5 text-primary shrink-0" />
                         <span className="whitespace-nowrap">{site.phone}</span>
                       </a>
-
-                      <div className="flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/8 px-3 py-1 text-[0.64rem] xs:text-[0.66rem] font-semibold text-emerald-700 shrink-0">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                        <span className="whitespace-nowrap">$0 Upfront Quotes</span>
-                      </div>
                     </div>
                   </div>
                 </div>

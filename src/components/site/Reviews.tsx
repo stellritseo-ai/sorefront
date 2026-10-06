@@ -5,6 +5,7 @@ import {
   Sparkles,
   Quote,
   ArrowUpRight,
+  ArrowRight,
   Store,
   DoorClosed,
   ShieldCheck,
@@ -256,14 +257,17 @@ export function Reviews() {
         {/* ── Section Header ── */}
         <Reveal className="text-center max-w-5xl mx-auto mb-6 sm:mb-8">
           {/* Eyebrow Pill Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[10px] font-bold uppercase tracking-widest mb-3.5 shadow-2xs select-none">
+          <a
+            href="/reviews"
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[10px] font-bold uppercase tracking-widest mb-3.5 shadow-2xs select-none hover:bg-primary/15 transition-colors group cursor-pointer"
+          >
             <span className="flex h-1.5 w-1.5 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary" />
             </span>
             <span>Verified Client Reviews</span>
-            <Sparkles className="size-3 text-primary" />
-          </div>
+            <ArrowRight className="size-3 text-primary transition-transform group-hover:translate-x-0.5" />
+          </a>
 
           <h2 className="text-slate-900 font-extrabold tracking-tight leading-[1.2] text-xl xs:text-2xl sm:text-3xl lg:text-[34px] font-display mt-0 mb-2.5">
             Trusted by Dallas{" "}
@@ -357,15 +361,23 @@ export function Reviews() {
           </div>
         </Reveal>
 
-        {/* ── Bottom Google Reviews Link ── */}
-        <Reveal delay={0.14} className="mt-5 text-center">
+        {/* ── Bottom Google & Dedicated Reviews Link ── */}
+        <Reveal delay={0.14} className="mt-8 flex flex-wrap items-center justify-center gap-3.5 text-center">
+          <a
+            href="/reviews"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-md hover:brightness-110 active:scale-95 transition-all"
+          >
+            <span>Explore All 127+ Client Reviews</span>
+            <ArrowRight className="size-3.5" />
+          </a>
+
           <a
             href="https://www.google.com/search?q=Sore+Fronts+Of+Dallas"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-[11.5px] sm:text-[12.5px] font-semibold text-slate-600 hover:text-primary transition-colors duration-200 group"
+            className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-xs font-bold text-slate-700 hover:text-primary hover:border-primary/40 shadow-xs transition-colors group"
           >
-            <span>Read verified 5-star customer reviews on Google</span>
+            <span>Verified Google Reviews</span>
             <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-primary" />
           </a>
         </Reveal>

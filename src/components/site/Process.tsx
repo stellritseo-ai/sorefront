@@ -413,6 +413,22 @@ export function Process() {
           })}
         </div>
 
+        {/* Process Bottom CTA */}
+        <Reveal delay={0.16} className="mt-10 sm:mt-14 text-center">
+          <div className="inline-flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-white/80 bg-white/70 p-2 sm:p-2.5 shadow-soft backdrop-blur-xl">
+            <span className="text-xs sm:text-sm font-semibold text-slate-700 px-3">
+              Ready to begin Stage 01 of your commercial glazing project?
+            </span>
+            <a
+              href="/free-estimate"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 sm:px-5 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-sm hover:brightness-110 transition-all active:scale-95"
+            >
+              <span>Get Free Estimate</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </a>
+          </div>
+        </Reveal>
+
       </div>
     </section>
   );

@@ -101,7 +101,7 @@ export function CommercialBanner() {
             <Reveal delay={0.2}>
               <div className="mt-8 flex flex-wrap items-center gap-3.5">
                 <a
-                  href="#contact"
+                  href="/free-estimate"
                   className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5.5 py-3 text-[0.76rem] font-bold uppercase tracking-[0.14em] text-primary-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.45),0_8px_28px_rgba(185,28,28,0.4)] transition-all duration-300 hover:brightness-110 hover:shadow-[0_12px_36px_rgba(185,28,28,0.5)] active:scale-[0.98]"
                 >
                   <span>Discuss Your Project</span>
@@ -126,7 +126,10 @@ export function CommercialBanner() {
                 const Icon = sector.icon;
                 return (
                   <Reveal key={sector.title} delay={0.1 + idx * 0.05}>
-                    <div className="group relative overflow-hidden rounded-xl border border-white/20 bg-[linear-gradient(135deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_100%)] p-4 sm:p-4.5 backdrop-blur-2xl shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-[linear-gradient(135deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.08)_100%)] hover:shadow-lift">
+                    <a
+                      href="/services"
+                      className="group relative block overflow-hidden rounded-xl border border-white/20 bg-[linear-gradient(135deg,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_100%)] p-4 sm:p-4.5 backdrop-blur-2xl shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-[linear-gradient(135deg,rgba(255,255,255,0.18)_0%,rgba(255,255,255,0.08)_100%)] hover:shadow-lift cursor-pointer"
+                    >
 
                       {/* Chromatic Dispersion Aura */}
                       <div className="pointer-events-none absolute inset-0 rounded-[inherit] border border-cyan-400/20 shadow-[inset_1px_1px_2px_rgba(56,189,248,0.2),inset_-1px_-1px_2px_rgba(244,114,182,0.2)]" />
@@ -158,7 +161,7 @@ export function CommercialBanner() {
                           <ArrowUpRight className="h-3 w-3" />
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </Reveal>
                 );
               })}

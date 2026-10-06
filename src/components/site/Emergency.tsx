@@ -204,10 +204,10 @@ export function Emergency() {
                 </a>
 
                 <a
-                  href="#contact"
+                  href="/services/emergency-commercial-glass-service"
                   className="group inline-flex items-center justify-center gap-2 rounded-full border border-border/80 bg-white/90 px-5 sm:px-6 py-3.5 text-xs font-bold uppercase tracking-[0.12em] sm:tracking-[0.14em] text-foreground shadow-[inset_0_1px_1.5px_rgba(255,255,255,0.9),0_4px_16px_rgba(0,0,0,0.05)] backdrop-blur-xl transition-all duration-300 hover:border-primary/40 hover:bg-white hover:text-primary hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto text-center"
                 >
-                  <span>Request Emergency Service</span>
+                  <span>Emergency Service Details</span>
                   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 shrink-0" />
                 </a>
               </div>

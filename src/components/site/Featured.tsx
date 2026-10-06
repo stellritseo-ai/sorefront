@@ -25,6 +25,7 @@ interface HotspotLabel {
   tooltipPos?: "top" | "bottom";
   floatDuration: number;
   floatDelay: number;
+  href: string;
 }
 
 const labels: HotspotLabel[] = [
@@ -40,6 +41,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "bottom",
     floatDuration: 4.8,
     floatDelay: 0,
+    href: "/services/storefront-glass-installation",
   },
   {
     id: "entrances",
@@ -53,6 +55,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "top",
     floatDuration: 5.4,
     floatDelay: 0.8,
+    href: "/services/commercial-door-hardware",
   },
   {
     id: "doors",
@@ -66,6 +69,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "bottom",
     floatDuration: 5.0,
     floatDelay: 0.4,
+    href: "/services/commercial-glass-door-installation",
   },
   {
     id: "windows",
@@ -79,6 +83,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "top",
     floatDuration: 5.8,
     floatDelay: 1.2,
+    href: "/services/commercial-glass-windows",
   },
   {
     id: "replacement",
@@ -92,6 +97,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "top",
     floatDuration: 5.2,
     floatDelay: 0.6,
+    href: "/services/glass-replacement-and-maintenance",
   },
   {
     id: "repair",
@@ -105,6 +111,7 @@ const labels: HotspotLabel[] = [
     tooltipPos: "bottom",
     floatDuration: 4.6,
     floatDelay: 1.0,
+    href: "/services/commercial-glass-door-repair",
   },
 ];
 
@@ -197,7 +204,7 @@ export function Featured() {
             {/* Action Buttons Suite */}
             <div className="mt-5 flex flex-wrap items-center gap-3">
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-2.5 text-[0.74rem] font-extrabold uppercase tracking-[0.14em] text-primary-foreground shadow-[0_4px_20px_rgba(185,28,28,0.4),inset_0_1px_1.5px_rgba(255,255,255,0.45)] transition-all duration-300 hover:brightness-110 active:scale-[0.98]"
               >
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full" />
@@ -259,7 +266,7 @@ export function Featured() {
 
                   {/* Interactive Button */}
                   <motion.a
-                    href="#services"
+                    href={l.href}
                     whileHover={{ scale: 1.08, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     onMouseEnter={() => setActiveHotspot(l.id)}
@@ -344,7 +351,7 @@ export function Featured() {
             {labels.map((l) => (
               <a
                 key={l.id}
-                href="#services"
+                href={l.href}
                 className="group flex flex-col justify-between rounded-xl border border-white/20 bg-black/60 p-2.5 shadow-md backdrop-blur-xl transition-all duration-300 hover:border-primary/80 hover:bg-black/80 hover:shadow-[0_0_20px_rgba(185,28,28,0.5)] active:scale-95"
               >
                 <div className="flex items-center justify-between text-[0.62rem] font-mono text-white/60">

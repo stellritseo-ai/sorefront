@@ -94,14 +94,17 @@ export function Contact() {
         {/* ── Section Header ── */}
         <Reveal className="text-center max-w-4xl mx-auto mb-8 sm:mb-12">
           {/* Eyebrow Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[10.5px] font-black uppercase tracking-widest mb-3.5 shadow-2xs select-none">
+          <a
+            href="/contact"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[10.5px] font-black uppercase tracking-widest mb-3.5 shadow-2xs select-none hover:bg-primary/15 transition-colors group cursor-pointer"
+          >
             <span className="flex h-1.5 w-1.5 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary" />
             </span>
             <span>Commercial Estimates & Dispatch</span>
-            <MapPin className="size-3 text-primary" />
-          </div>
+            <ArrowRight className="size-3 text-primary transition-transform group-hover:translate-x-0.5" />
+          </a>
 
           <h2 className="text-slate-900 font-extrabold tracking-tight leading-[1.18] text-xl xs:text-2xl sm:text-[28px] md:text-[32px] lg:text-[35px] font-display mt-0 mb-2 sm:mb-2.5">
             Request a Free Estimate or{" "}
@@ -395,6 +398,14 @@ export function Contact() {
                 >
                   <Navigation className="size-3.5" />
                   <span>Get Directions</span>
+                </a>
+
+                <a
+                  href="/contact"
+                  className="col-span-1 sm:col-span-2 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl border border-slate-200 hover:border-primary/40 bg-slate-50 hover:bg-white text-slate-700 text-[10.5px] font-bold uppercase tracking-wider transition-all"
+                >
+                  <span>View Full Contact &amp; Dispatch Details</span>
+                  <ArrowRight className="size-3 text-primary" />
                 </a>
               </div>
             </div>

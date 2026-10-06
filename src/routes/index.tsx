@@ -25,7 +25,7 @@ const structuredData = {
   name: "Sore Fronts Of Dallas",
   description,
   telephone: "+1-469-360-5805",
-  email: "info@Sorefrontsofdallas.com",
+  email: "support@sorefrontsofdallas.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "10830 N. Central Expressway Ste. 130",

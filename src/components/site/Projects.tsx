@@ -63,13 +63,17 @@ export function Projects() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <Reveal className="max-w-3xl xl:max-w-4xl">
             {/* Pill Eyebrow with Beacon */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.16em] text-primary shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] backdrop-blur-md mb-3 select-none">
+            <a
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.16em] text-primary shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] backdrop-blur-md mb-3 select-none hover:bg-primary/20 transition-colors group cursor-pointer"
+            >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-80" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
               <span>Commercial Glazing Portfolio</span>
-            </div>
+              <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+            </a>
 
             <h2 className="font-display text-2xl sm:text-3xl lg:text-[36px] xl:text-[40px] font-black tracking-tight text-foreground leading-[1.14] whitespace-normal sm:whitespace-nowrap">
               Engineered Commercial{" "}
@@ -82,6 +86,16 @@ export function Projects() {
             <p className="mt-2.5 sm:mt-3 mb-0 text-sm sm:text-base leading-relaxed text-muted-foreground font-normal max-w-2xl">
               A closer look at real storefronts, corporate curtain walls, and heavy-traffic entrance doors engineered and installed across the Dallas-Fort Worth metroplex.
             </p>
+          </Reveal>
+
+          <Reveal className="hidden md:flex shrink-0">
+            <a
+              href="/projects"
+              className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-white/70 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-foreground shadow-soft backdrop-blur-md transition-all hover:border-primary/50 hover:bg-white active:scale-95"
+            >
+              <span>Explore All Projects</span>
+              <ArrowRight className="h-3.5 w-3.5 text-primary" />
+            </a>
           </Reveal>
         </div>
 
@@ -226,7 +240,7 @@ export function Projects() {
               </a>
 
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary via-[#b91c1c] to-primary px-5 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-[0_4px_16px_rgba(185,28,28,0.35)] transition-all hover:brightness-110 active:scale-[0.98]"
               >
                 <span>Request Project Bid</span>
@@ -315,7 +329,7 @@ export function Projects() {
                   {/* Modal Action CTA */}
                   <div className="mt-6 pt-4 border-t border-border/60 flex flex-col sm:flex-row gap-2.5">
                     <a
-                      href="#contact"
+                      href="/free-estimate"
                       onClick={() => setSelectedProject(null)}
                       className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-primary-foreground shadow-md hover:brightness-110 transition-all text-center"
                     >

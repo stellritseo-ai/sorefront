@@ -128,7 +128,7 @@ export function Faq() {
             {/* Direct call bottom line */}
             <div className="pt-2 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary via-[#6B3F27] to-[#1E232A] text-white border border-white/20 text-[11px] font-black uppercase tracking-widest rounded-full px-7 py-3 shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto cursor-pointer"
               >
                 <span>Request Free Commercial Estimate</span>
@@ -203,7 +203,7 @@ export function Faq() {
                     </p>
                   </div>
                   <a
-                    href="#contact"
+                    href="/free-estimate"
                     aria-label="Request Commercial Estimate"
                     className="shrink-0 w-8.5 h-8.5 rounded-full bg-[#181B20] text-white flex items-center justify-center border border-white/20 shadow-md hover:bg-primary transition-colors cursor-pointer"
                   >

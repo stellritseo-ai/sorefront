@@ -111,17 +111,24 @@ export function WhyUs() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3">
               <a
-                href="#services"
-                className="inline-flex items-center gap-2 bg-charcoal hover:bg-black text-white text-[11px] font-black uppercase tracking-widest rounded-full px-6 py-3 transition-all duration-300 shadow-md hover:scale-[1.03] active:scale-[0.97] cursor-pointer border border-white/10"
+                href="/services"
+                className="inline-flex items-center gap-2 bg-charcoal hover:bg-black text-white text-[11px] font-black uppercase tracking-widest rounded-full px-5 py-3 transition-all duration-300 shadow-md hover:scale-[1.03] active:scale-[0.97] cursor-pointer border border-white/10"
               >
                 <span>Explore Services</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
               <a
-                href={site.phoneHref}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-[#b91c1c] text-white border border-primary/40 text-[11px] font-black uppercase tracking-widest rounded-full px-6 py-3 transition-all duration-300 shadow-md hover:scale-[1.03] active:scale-[0.97] cursor-pointer"
+                href="/free-estimate"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-[#b91c1c] text-white border border-primary/40 text-[11px] font-black uppercase tracking-widest rounded-full px-5 py-3 transition-all duration-300 shadow-md hover:scale-[1.03] active:scale-[0.97] cursor-pointer"
               >
-                <Phone className="w-3.5 h-3.5 text-champagne" />
+                <span>Free Estimate</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href={site.phoneHref}
+                className="inline-flex items-center gap-2 border border-border/80 bg-white/70 hover:bg-white text-foreground text-[11px] font-black uppercase tracking-widest rounded-full px-4 py-3 transition-all duration-300 shadow-sm hover:scale-[1.03] active:scale-[0.97] cursor-pointer"
+              >
+                <Phone className="w-3.5 h-3.5 text-primary" />
                 <span>Call {site.phone}</span>
               </a>
             </div>

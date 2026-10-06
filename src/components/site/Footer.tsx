@@ -71,24 +71,26 @@ const socials = [
 ];
 
 const commercialServices = [
-  { label: "Commercial Glass Doors", href: "#services" },
-  { label: "Aluminum Storefronts", href: "#services" },
-  { label: "Commercial Window Units", href: "#services" },
-  { label: "24/7 Emergency Board-Up", href: "#emergency" },
-  { label: "Door Closers & Panic Hardware", href: "#services" },
-  { label: "Curtain Wall Glazing", href: "#services" },
-  { label: "Thermal Low-E Safety Glass", href: "#services" },
+  { label: "Commercial Glass Door Installation", href: "/services/commercial-glass-door-installation" },
+  { label: "Commercial Glass Door Repair", href: "/services/commercial-glass-door-repair" },
+  { label: "Storefront Glass Installation", href: "/services/storefront-glass-installation" },
+  { label: "Storefront Glass Repair", href: "/services/storefront-glass-repair" },
+  { label: "Commercial Glass Windows", href: "/services/commercial-glass-windows" },
+  { label: "24/7 Emergency Glass Service", href: "/services/emergency-commercial-glass-service" },
+  { label: "Commercial Door Hardware", href: "/services/commercial-door-hardware" },
+  { label: "Glass Replacement & Maintenance", href: "/services/glass-replacement-and-maintenance" },
 ];
 
 const quickNav = [
-  { label: "Home", href: "#home" },
-  { label: "About Sore Fronts", href: "#about" },
-  { label: "Commercial Services", href: "#services" },
-  { label: "Featured Projects", href: "#projects" },
-  { label: "Installation Process", href: "#process" },
-  { label: "Emergency Glazing", href: "#emergency" },
-  { label: "Verified Reviews", href: "#reviews" },
-  { label: "Request Free Estimate", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Sure Fronts", href: "/about" },
+  { label: "Commercial Services", href: "/services" },
+  { label: "Featured Projects", href: "/projects" },
+  { label: "Installation Process", href: "/#process" },
+  { label: "Emergency Glazing", href: "/services/emergency-commercial-glass-service" },
+  { label: "Verified Reviews", href: "/reviews" },
+  { label: "Request Free Estimate", href: "/free-estimate" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const trustBadges = [
@@ -217,7 +219,7 @@ export function Footer() {
               </a>
 
               <a
-                href="#contact"
+                href="/free-estimate"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/10 hover:bg-white/15 px-5 py-3 text-xs font-black uppercase tracking-wider text-white hover:text-amber-300 transition-all cursor-pointer text-center"
               >
                 <span>Request Free Estimate</span>
