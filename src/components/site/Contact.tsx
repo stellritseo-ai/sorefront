@@ -16,6 +16,7 @@ import {
 import { toast } from "sonner";
 import { site, serviceOptions } from "@/data/site";
 import { Reveal } from "./Reveal";
+import { submitLead } from "@/lib/sendLead";
 
 const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
   `${site.address.street}, ${site.address.city}, ${site.address.state} ${site.address.zip}`,
@@ -44,31 +45,37 @@ export function Contact() {
       setForm((prev) => ({ ...prev, [field]: e.target.value }));
     };
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const body = [
-      `Name: ${form.name}`,
-      `Business: ${form.business || "Not specified"}`,
-      `Phone: ${form.phone}`,
-      `Email: ${form.email || "Not specified"}`,
-      `Service needed: ${form.service || "Commercial Glass Consultation"}`,
-      `Timeline: ${form.timeline}`,
-      "",
-      `Project Details:\n${form.details || "No additional notes provided."}`,
-    ].join("\n");
+    try {
+      const result = await submitLead({
+        formSource: "Homepage Contact Form",
+        name: form.name,
+        businessName: form.business,
+        phone: form.phone,
+        email: form.email,
+        serviceNeeded: form.service || "Commercial Glass Consultation",
+        timeline: form.timeline,
+        message: form.details,
+      });
 
-    window.location.href = `${site.emailHref}?subject=${encodeURIComponent(
-      `Commercial Estimate Request - ${form.business || form.name}`,
-    )}&body=${encodeURIComponent(body)}`;
-
-    toast.success("Estimate request compiled successfully", {
-      description: `Opening your email. For immediate dispatch, call ${site.phone}.`,
-    });
-
-    setIsSubmitted(true);
-    setIsSubmitting(false);
+      if (result.success) {
+        toast.success("Estimate request sent successfully!", {
+          description: `Delivered to our team. For immediate emergency dispatch, call ${site.phone}.`,
+        });
+        setIsSubmitted(true);
+      } else {
+        toast.error("Could not send form online.", {
+          description: "Please call us directly at (469) 360-5805 or email support@sorefrontsofdallas.com",
+        });
+      }
+    } catch {
+      toast.error("Submission error. Please call (469) 360-5805.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (

@@ -19,6 +19,7 @@ import { Link } from "@tanstack/react-router";
 import { toast } from "sonner";
 import { estimatePageData } from "@/data/estimate";
 import { site } from "@/data/site";
+import { submitLead } from "@/lib/sendLead";
 
 export function EstimateHeroAndForm() {
   const { hero, form } = estimatePageData;
@@ -57,9 +58,8 @@ export function EstimateHeroAndForm() {
     }
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
     if (
       !formData.contactName ||
@@ -69,18 +69,41 @@ export function EstimateHeroAndForm() {
       !formData.propertyAddress
     ) {
       toast.error("Please fill in all required fields marked with *");
-      setIsSubmitting(false);
       return;
     }
 
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setIsSubmitting(false);
-      toast.success("Estimate request submitted successfully!", {
-        description:
-          "A dedicated project manager will contact you within 24 business hours. For immediate emergencies, call (469) 360-5805.",
+    setIsSubmitting(true);
+
+    try {
+      const detailsWithFile = uploadedFile
+        ? `${formData.projectDetails}\n[Note: User indicated attachment: "${uploadedFile.name}" (${(uploadedFile.size / 1024 / 1024).toFixed(2)} MB)]`
+        : formData.projectDetails;
+
+      const result = await submitLead({
+        formSource: "Free Estimate Page Form",
+        name: formData.contactName,
+        businessName: formData.businessName,
+        phone: formData.phone,
+        email: formData.email,
+        serviceNeeded: formData.serviceNeeded,
+        propertyAddress: formData.propertyAddress,
+        message: detailsWithFile,
       });
-    }, 600);
+
+      if (result.success) {
+        setIsSubmitted(true);
+        toast.success("Estimate request submitted successfully!", {
+          description:
+            "A dedicated project manager will contact you within 24 business hours. For immediate emergencies, call (469) 360-5805.",
+        });
+      } else {
+        toast.error("Could not deliver estimate online. Please call us directly at (469) 360-5805.");
+      }
+    } catch {
+      toast.error("Submission failed. Please call (469) 360-5805.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

@@ -3,6 +3,7 @@ import { Star, Phone, Mail, MapPin, ArrowRight, ShieldAlert, CheckCircle2, Exter
 import { toast } from "sonner";
 import { reviewsPageData } from "@/data/reviews";
 import { site } from "@/data/site";
+import { submitLead } from "@/lib/sendLead";
 
 export function ReviewsCta() {
   const { reviewCta } = reviewsPageData;
@@ -17,16 +18,38 @@ export function ReviewsCta() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.phone) {
       toast.error("Please enter your name and phone number so our team can reach you.");
       return;
     }
 
-    setSubmitted(true);
-    toast.success("Thank you! Your estimate request has been received. Our team will reach out shortly.");
+    setIsSubmitting(true);
+    try {
+      const result = await submitLead({
+        formSource: "Reviews Page Consultation Form",
+        name: formState.name,
+        businessName: formState.company,
+        phone: formState.phone,
+        email: formState.email,
+        serviceNeeded: formState.projectType,
+        message: formState.notes,
+      });
+
+      if (result.success) {
+        setSubmitted(true);
+        toast.success("Thank you! Your estimate request has been received. Our team will reach out shortly.");
+      } else {
+        toast.error("Could not deliver request online. Please call (469) 360-5805.");
+      }
+    } catch {
+      toast.error("Submission failed. Please call (469) 360-5805.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
@@ -242,10 +265,11 @@ export function ReviewsCta() {
                     />
                     <button
                       type="submit"
-                      className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-all cursor-pointer"
+                      disabled={isSubmitting}
+                      className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-bold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-all cursor-pointer disabled:opacity-60"
                     >
                       <Send className="h-3 w-3" />
-                      <span>Send</span>
+                      <span>{isSubmitting ? "..." : "Send"}</span>
                     </button>
                   </div>
                 </form>

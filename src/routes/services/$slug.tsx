@@ -21,6 +21,8 @@ export const Route = createFileRoute("/services/$slug")({
       ? s.tagline
       : "Commercial glass and storefront services across Dallas-Fort Worth.";
 
+    const pageUrl = `https://sorefrontsofdallas.com/services/${params.slug}`;
+
     return {
       meta: [
         { title },
@@ -28,8 +30,12 @@ export const Route = createFileRoute("/services/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "website" },
+        { property: "og:url", content: pageUrl },
         { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
       ],
+      links: [{ rel: "canonical", href: pageUrl }],
       scripts: s
         ? [
             {
@@ -40,6 +46,7 @@ export const Route = createFileRoute("/services/$slug")({
                 name: s.title,
                 serviceType: s.shortTitle,
                 description: s.overview,
+                url: pageUrl,
                 provider: {
                   "@type": "LocalBusiness",
                   name: "Sure Fronts Of Dallas",

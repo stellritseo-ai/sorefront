@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Send, CheckCircle2, MessageSquare, Building2, User, Mail, Phone, ChevronDown, Sparkles } from "lucide-react";
+import { toast } from "sonner";
 import { contactPageData } from "@/data/contact";
+import { submitLead } from "@/lib/sendLead";
 
 export function ContactGeneralForm() {
   const { generalForm } = contactPageData;
@@ -17,14 +19,31 @@ export function ContactGeneralForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulate lightweight client submission
-    setTimeout(() => {
+    try {
+      const result = await submitLead({
+        formSource: "Contact Page General Inquiry",
+        name: formData.fullName,
+        businessName: formData.businessName,
+        email: formData.email,
+        phone: formData.phone,
+        serviceNeeded: formData.subject,
+        message: formData.message,
+      });
+
+      if (result.success) {
+        setSubmitted(true);
+        toast.success("Inquiry delivered to our Dallas team!");
+      } else {
+        toast.error("Could not deliver message online. Please call (469) 360-5805.");
+      }
+    } catch {
+      toast.error("Failed to send inquiry. Please call (469) 360-5805.");
+    } finally {
       setSubmitting(false);
-      setSubmitted(true);
-    }, 700);
+    }
   };
 
   const handleReset = () => {

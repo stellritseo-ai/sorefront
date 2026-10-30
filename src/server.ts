@@ -2,6 +2,7 @@ import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
+import { sendEmailNotification, type ContactSubmission } from "./server/mailer";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -47,6 +48,30 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const url = new URL(request.url);
+      if (url.pathname === "/api/contact" && request.method === "POST") {
+        try {
+          const body = (await request.json()) as ContactSubmission;
+          const result = await sendEmailNotification(body, env);
+          return new Response(JSON.stringify({ success: true, messageId: result.messageId }), {
+            status: 200,
+            headers: { "content-type": "application/json" },
+          });
+        } catch (err) {
+          console.error("[API /api/contact Error]", err);
+          return new Response(
+            JSON.stringify({
+              success: false,
+              error: err instanceof Error ? err.message : "Failed to deliver contact email",
+            }),
+            {
+              status: 500,
+              headers: { "content-type": "application/json" },
+            },
+          );
+        }
+      }
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);

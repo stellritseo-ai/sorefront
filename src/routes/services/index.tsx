@@ -42,8 +42,12 @@ export const Route = createFileRoute("/services/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://sorefrontsofdallas.com/services" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
+    links: [{ rel: "canonical", href: "https://sorefrontsofdallas.com/services" }],
     scripts: [
       {
         type: "application/ld+json",

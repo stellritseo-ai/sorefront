@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, ArrowRight, ShieldAlert, CheckCircle2, Clock, Send
 import { toast } from "sonner";
 import { aboutPageData } from "@/data/about";
 import { site } from "@/data/site";
+import { submitLead } from "@/lib/sendLead";
 
 const serviceList = [
   "Commercial Storefront & Entrance",
@@ -28,16 +29,39 @@ export function AboutCta() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.phone) {
       toast.error("Please enter your name and phone number so our team can reach you.");
       return;
     }
 
-    setSubmitted(true);
-    toast.success("Estimate request received! Our Dallas commercial glazing team will reach out shortly.");
+    setIsSubmitting(true);
+    try {
+      const result = await submitLead({
+        formSource: "About Page Consultation Form",
+        name: formState.name,
+        businessName: formState.company,
+        phone: formState.phone,
+        email: formState.email,
+        serviceNeeded: formState.service,
+        isEmergency: formState.isEmergency,
+        message: formState.message,
+      });
+
+      if (result.success) {
+        setSubmitted(true);
+        toast.success("Estimate request received! Our Dallas commercial glazing team will reach out shortly.");
+      } else {
+        toast.error("Could not deliver request online. Please call (469) 360-5805.");
+      }
+    } catch {
+      toast.error("Submission failed. Please call (469) 360-5805.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
@@ -330,10 +354,11 @@ export function AboutCta() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary via-[#b91c1c] to-primary py-3.5 text-sm font-bold uppercase tracking-widest text-primary-foreground shadow-lg hover:brightness-110 active:scale-[0.99] transition-all cursor-pointer"
+                    disabled={isSubmitting}
+                    className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary via-[#b91c1c] to-primary py-3.5 text-sm font-bold uppercase tracking-widest text-primary-foreground shadow-lg hover:brightness-110 active:scale-[0.99] transition-all cursor-pointer disabled:opacity-60"
                   >
                     <Send className="h-4 w-4" />
-                    <span>Submit Free Estimate Request</span>
+                    <span>{isSubmitting ? "Sending..." : "Submit Free Estimate Request"}</span>
                   </button>
 
                   <div className="text-center text-[11px] text-muted-foreground">

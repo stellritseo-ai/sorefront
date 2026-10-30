@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "../styles.css?url";
@@ -79,22 +81,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sore Fronts Of Dallas | Commercial Glass Doors & Windows" },
+      { name: "google-site-verification", content: "IjIXFKK92bScS6TccFrWSbgoneTl4iPhR-hznq1c1Zw" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "theme-color", content: "#0B0F17" },
+      { name: "geo.region", content: "US-TX" },
+      { name: "geo.placename", content: "Dallas, Texas" },
+      { name: "geo.position", content: "32.8943;-96.7689" },
+      { name: "ICBM", content: "32.8943, -96.7689" },
+      { title: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
       {
         name: "description",
         content:
-          "Commercial glass door, storefront and window installation, repair and emergency service in Dallas, TX.",
+          "Dallas commercial glass door repair, storefront installation, commercial windows & 24/7 emergency glazing service across DFW. Licensed, insured & bonded.",
+      },
+      {
+        name: "keywords",
+        content:
+          "commercial glass door repair Dallas, storefront glass installation Dallas TX, commercial storefront replacement Dallas, emergency commercial glass repair Dallas, commercial door hardware Dallas, storefront doors Dallas TX, commercial glass company Dallas Fort Worth",
       },
       { name: "author", content: "Sore Fronts Of Dallas" },
-      { property: "og:title", content: "Sore Fronts Of Dallas | Commercial Glass Doors & Windows" },
+      { property: "og:site_name", content: "Sore Fronts Of Dallas" },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
       {
         property: "og:description",
         content:
-          "Commercial glass door, storefront and window installation, repair and emergency service in Dallas, TX.",
+          "Dallas commercial glass door repair, storefront installation, commercial windows & 24/7 emergency glazing service across DFW. Licensed, insured & bonded.",
       },
-      { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://sorefrontsofdallas.com/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Sore Fronts Of Dallas - Commercial Glass Doors & Storefront Systems" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
+      {
+        name: "twitter:description",
+        content:
+          "Dallas commercial glass door repair, storefront installation, commercial windows & 24/7 emergency glazing service across DFW.",
+      },
+      { name: "twitter:image", content: "https://sorefrontsofdallas.com/og-image.jpg" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -140,6 +166,7 @@ function RootComponent() {
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
       <Toaster position="bottom-right" />
+      <Analytics />
     </QueryClientProvider>
   );
 }
