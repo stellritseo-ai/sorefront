@@ -563,15 +563,27 @@ export function Footer() {
         {/* ── BOTTOM BAR (COPYRIGHT, TRUST SUMMARY & BACK TO TOP) ── */}
         <div className="border-t border-white/10 bg-black/40">
           <div className="max-w-[94rem] mx-auto px-5 sm:px-8 lg:px-12 pt-6 pb-[20px] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            {/* Copyright Info */}
-            <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3 text-xs text-slate-400 font-medium order-2 sm:order-1">
+            {/* Copyright Info & Developer Credit */}
+            <div className="flex flex-col xl:flex-row items-center gap-1.5 sm:gap-2.5 text-xs text-slate-400 font-medium order-2 sm:order-1">
               <p>
                 © 2026 Sore Fronts Of Dallas. All Rights Reserved. Commercial Glazing & Storefront Systems.
               </p>
-              <span className="hidden sm:inline text-white/20">|</span>
+              <span className="hidden xl:inline text-white/20">•</span>
               <p className="text-slate-400">
                 100% Commercial Only •{" "}
                 <span className="text-amber-400 font-bold">Dallas, TX</span>
+              </p>
+              <span className="hidden xl:inline text-white/20">•</span>
+              <p className="text-slate-400">
+                Developed by{" "}
+                <a
+                  href="https://stellrit.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:text-amber-300 font-bold hover:underline transition-colors"
+                >
+                  StellR IT LLC
+                </a>
               </p>
             </div>
 
