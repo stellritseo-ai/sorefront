@@ -115,7 +115,7 @@ export async function sendEmailNotification(submission: ContactSubmission, env?:
           <div class="header">
             ${submission.isEmergency ? '<div class="badge">URGENT 24/7 EMERGENCY</div>' : '<div class="badge" style="background:#0284c7;">NEW LEAD</div>'}
             <h1>Commercial Glass Inquiry Received</h1>
-            <p>Submitted via ${submission.formSource} on sorefrontsofdallas.com</p>
+            <p>Submitted via ${submission.formSource} on glassdoordallas.com</p>
           </div>
           <div class="content">
             <table class="grid">

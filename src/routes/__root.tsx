@@ -109,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Dallas commercial glass door repair, storefront installation, commercial windows & 24/7 emergency glazing service across DFW. Licensed, insured & bonded.",
       },
-      { property: "og:image", content: "https://sorefrontsofdallas.com/og-image.jpg" },
+      { property: "og:image", content: "https://www.glassdoordallas.com/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
       { property: "og:image:alt", content: "Sore Fronts Of Dallas - Commercial Glass Doors & Storefront Systems" },
@@ -120,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Dallas commercial glass door repair, storefront installation, commercial windows & 24/7 emergency glazing service across DFW.",
       },
-      { name: "twitter:image", content: "https://sorefrontsofdallas.com/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.glassdoordallas.com/og-image.jpg" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

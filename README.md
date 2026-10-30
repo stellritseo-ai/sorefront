@@ -1,6 +1,6 @@
 # Sore Fronts Of Dallas — Complete SEO Strategy & Keyword Directory
 
-> **Official Website:** [https://sorefrontsofdallas.com](https://sorefrontsofdallas.com)  
+> **Official Website:** [https://www.glassdoordallas.com](https://www.glassdoordallas.com)  
 > **Location:** 10830 N. Central Expressway Ste. 130, Dallas, TX 75231  
 > **Phone:** [(469) 360-5805](tel:+14693605805) · **Email:** [support@sorefrontsofdallas.com](mailto:support@sorefrontsofdallas.com)  
 > **Service Radius:** 50-Mile DFW Commercial Metroplex Coverage  
@@ -37,21 +37,21 @@ Every page is optimized for maximum organic crawlability, keyword relevance, con
 
 | Page / Route | Primary Target Topic | Canonical URL |
 | :--- | :--- | :--- |
-| `/` | Commercial Glass Doors & Storefronts Dallas | `https://sorefrontsofdallas.com/` |
-| `/about` | Commercial Glazing Specialists & Heritage | `https://sorefrontsofdallas.com/about` |
-| `/services` | Commercial Glazing & Storefront Hub | `https://sorefrontsofdallas.com/services` |
-| `/services/commercial-glass-door-installation` | High-Traffic Entrance Door Installation | `https://sorefrontsofdallas.com/services/commercial-glass-door-installation` |
-| `/services/commercial-glass-door-repair` | Commercial Glass Door Repair & Maintenance | `https://sorefrontsofdallas.com/services/commercial-glass-door-repair` |
-| `/services/storefront-glass-installation` | Storefront Glass Installation & Framing | `https://sorefrontsofdallas.com/services/storefront-glass-installation` |
-| `/services/storefront-glass-repair` | Storefront Glass Repair & Panel Replacement | `https://sorefrontsofdallas.com/services/storefront-glass-repair` |
-| `/services/commercial-glass-windows` | Commercial Window Replacement & Low-E Glazing | `https://sorefrontsofdallas.com/services/commercial-glass-windows` |
-| `/services/emergency-commercial-glass-service` | 24/7 Emergency Glazing & Board-Up Service | `https://sorefrontsofdallas.com/services/emergency-commercial-glass-service` |
-| `/services/commercial-door-hardware` | Pivots, Heavy Closers & ADA Panic Hardware | `https://sorefrontsofdallas.com/services/commercial-door-hardware` |
-| `/services/glass-replacement-and-maintenance` | Preventative Glazing Maintenance Contracts | `https://sorefrontsofdallas.com/services/glass-replacement-and-maintenance` |
-| `/projects` | Commercial Glazing Portfolio & Case Studies | `https://sorefrontsofdallas.com/projects` |
-| `/reviews` | Client Reviews & Commercial Glazier Ratings | `https://sorefrontsofdallas.com/reviews` |
-| `/free-estimate` | Commercial Glass Estimate Request | `https://sorefrontsofdallas.com/free-estimate` |
-| `/contact` | 24/7 Dispatch & Dallas Office Contact | `https://sorefrontsofdallas.com/contact` |
+| `/` | Commercial Glass Doors & Storefronts Dallas | `https://www.glassdoordallas.com/` |
+| `/about` | Commercial Glazing Specialists & Heritage | `https://www.glassdoordallas.com/about` |
+| `/services` | Commercial Glazing & Storefront Hub | `https://www.glassdoordallas.com/services` |
+| `/services/commercial-glass-door-installation` | High-Traffic Entrance Door Installation | `https://www.glassdoordallas.com/services/commercial-glass-door-installation` |
+| `/services/commercial-glass-door-repair` | Commercial Glass Door Repair & Maintenance | `https://www.glassdoordallas.com/services/commercial-glass-door-repair` |
+| `/services/storefront-glass-installation` | Storefront Glass Installation & Framing | `https://www.glassdoordallas.com/services/storefront-glass-installation` |
+| `/services/storefront-glass-repair` | Storefront Glass Repair & Panel Replacement | `https://www.glassdoordallas.com/services/storefront-glass-repair` |
+| `/services/commercial-glass-windows` | Commercial Window Replacement & Low-E Glazing | `https://www.glassdoordallas.com/services/commercial-glass-windows` |
+| `/services/emergency-commercial-glass-service` | 24/7 Emergency Glazing & Board-Up Service | `https://www.glassdoordallas.com/services/emergency-commercial-glass-service` |
+| `/services/commercial-door-hardware` | Pivots, Heavy Closers & ADA Panic Hardware | `https://www.glassdoordallas.com/services/commercial-door-hardware` |
+| `/services/glass-replacement-and-maintenance` | Preventative Glazing Maintenance Contracts | `https://www.glassdoordallas.com/services/glass-replacement-and-maintenance` |
+| `/projects` | Commercial Glazing Portfolio & Case Studies | `https://www.glassdoordallas.com/projects` |
+| `/reviews` | Client Reviews & Commercial Glazier Ratings | `https://www.glassdoordallas.com/reviews` |
+| `/free-estimate` | Commercial Glass Estimate Request | `https://www.glassdoordallas.com/free-estimate` |
+| `/contact` | 24/7 Dispatch & Dallas Office Contact | `https://www.glassdoordallas.com/contact` |
 
 ---
 
@@ -190,8 +190,8 @@ function RootComponent() {
   Allow: /
 
   # Sitemaps
-  Sitemap: https://sorefrontsofdallas.com/sitemap.xml
-  Host: https://sorefrontsofdallas.com
+  Sitemap: https://www.glassdoordallas.com/sitemap.xml
+  Host: https://www.glassdoordallas.com
   ```
 
 ### Structured Data (JSON-LD Schemas)

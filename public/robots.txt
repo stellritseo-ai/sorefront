@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://sorefrontsofdallas.com/sitemap.xml
-Host: https://sorefrontsofdallas.com
+Sitemap: https://www.glassdoordallas.com/sitemap.xml
+Host: https://www.glassdoordallas.com

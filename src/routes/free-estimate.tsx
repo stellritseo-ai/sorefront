@@ -39,7 +39,7 @@ const structuredData = {
   ],
   potentialAction: {
     "@type": "QuoteAction",
-    target: "https://sorefrontsofdallas.com/free-estimate",
+    target: "https://www.glassdoordallas.com/free-estimate",
   },
 };
 
@@ -51,12 +51,12 @@ export const Route = createFileRoute("/free-estimate")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sorefrontsofdallas.com/free-estimate" },
+      { property: "og:url", content: "https://www.glassdoordallas.com/free-estimate" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://sorefrontsofdallas.com/free-estimate" }],
+    links: [{ rel: "canonical", href: "https://www.glassdoordallas.com/free-estimate" }],
     scripts: [
       {
         type: "application/ld+json",

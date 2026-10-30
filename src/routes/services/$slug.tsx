@@ -21,7 +21,7 @@ export const Route = createFileRoute("/services/$slug")({
       ? s.tagline
       : "Commercial glass and storefront services across Dallas-Fort Worth.";
 
-    const pageUrl = `https://sorefrontsofdallas.com/services/${params.slug}`;
+    const pageUrl = `https://www.glassdoordallas.com/services/${params.slug}`;
 
     return {
       meta: [

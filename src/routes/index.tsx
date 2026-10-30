@@ -24,12 +24,12 @@ const structuredData = {
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://sorefrontsofdallas.com/#localbusiness",
+      "@id": "https://www.glassdoordallas.com/#localbusiness",
       name: "Sore Fronts Of Dallas",
       alternateName: "Sure Fronts Of Dallas",
-      url: "https://sorefrontsofdallas.com",
-      logo: "https://sorefrontsofdallas.com/favicon.png",
-      image: "https://sorefrontsofdallas.com/og-image.jpg",
+      url: "https://www.glassdoordallas.com",
+      logo: "https://www.glassdoordallas.com/favicon.png",
+      image: "https://www.glassdoordallas.com/og-image.jpg",
       description,
       telephone: "+1-469-360-5805",
       email: "support@sorefrontsofdallas.com",
@@ -81,12 +81,12 @@ const structuredData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://sorefrontsofdallas.com/#website",
-      url: "https://sorefrontsofdallas.com",
+      "@id": "https://www.glassdoordallas.com/#website",
+      url: "https://www.glassdoordallas.com",
       name: "Sore Fronts Of Dallas",
       description: "Dallas commercial glass doors, storefront systems and architectural glazing.",
       publisher: {
-        "@id": "https://sorefrontsofdallas.com/#localbusiness",
+        "@id": "https://www.glassdoordallas.com/#localbusiness",
       },
     },
   ],
@@ -100,12 +100,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sorefrontsofdallas.com/" },
+      { property: "og:url", content: "https://www.glassdoordallas.com/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://sorefrontsofdallas.com/" }],
+    links: [{ rel: "canonical", href: "https://www.glassdoordallas.com/" }],
     scripts: [
       {
         type: "application/ld+json",

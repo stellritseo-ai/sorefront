@@ -17,7 +17,7 @@ const structuredData = {
   "@type": "CollectionPage",
   name: title,
   description,
-  url: "https://sorefrontsofdallas.com/projects",
+  url: "https://www.glassdoordallas.com/projects",
   provider: {
     "@type": "LocalBusiness",
     name: "Sure Fronts Of Dallas",
@@ -47,12 +47,12 @@ export const Route = createFileRoute("/projects")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sorefrontsofdallas.com/projects" },
+      { property: "og:url", content: "https://www.glassdoordallas.com/projects" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://sorefrontsofdallas.com/projects" }],
+    links: [{ rel: "canonical", href: "https://www.glassdoordallas.com/projects" }],
     scripts: [
       {
         type: "application/ld+json",

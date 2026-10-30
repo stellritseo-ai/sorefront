@@ -63,12 +63,12 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://sorefrontsofdallas.com/about" },
+      { property: "og:url", content: "https://www.glassdoordallas.com/about" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "https://sorefrontsofdallas.com/about" }],
+    links: [{ rel: "canonical", href: "https://www.glassdoordallas.com/about" }],
     scripts: [
       {
         type: "application/ld+json",
