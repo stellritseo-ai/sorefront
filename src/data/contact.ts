@@ -1,6 +1,6 @@
 export const contactPageData = {
   hero: {
-    headline: "Contact Sure Fronts Of Dallas.",
+    headline: "Contact Store Fronts Of Dallas.",
     subheadline:
       "Whether you need a routine estimate, project consultation, or immediate emergency board-up, our commercial glazing experts are ready to assist.",
     quickButtons: {
@@ -47,8 +47,8 @@ export const contactPageData = {
         actionType: "scroll",
         actionText: "Jump to Contact Form",
         actionHref: "#contact-form",
-        email: "support@sorefrontsofdallas.com",
-        emailHref: "mailto:support@sorefrontsofdallas.com",
+        email: "support@storefrontsofdallas.com",
+        emailHref: "mailto:support@storefrontsofdallas.com",
         availability: "Mon–Fri: 7:00 AM – 5:00 PM",
         accent: "slate",
       },
@@ -71,7 +71,7 @@ export const contactPageData = {
     headline: "Corporate Office & Showroom",
     eyebrow: "Dallas Headquarters",
     body: "While we service a 50-mile radius across the DFW Metroplex, our headquarters are centrally located in Dallas. Stop by to discuss your project or view material samples.",
-    company: "Sure Fronts Of Dallas",
+    company: "Store Fronts Of Dallas",
     address: {
       street: "10830 N. Central Expressway, Ste 130",
       city: "Dallas",
@@ -81,8 +81,8 @@ export const contactPageData = {
     },
     phone: "(469) 360-5805",
     phoneHref: "tel:+14693605805",
-    email: "support@sorefrontsofdallas.com",
-    emailHref: "mailto:support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
+    emailHref: "mailto:support@storefrontsofdallas.com",
     officeHours: "Monday - Friday: 7:00 AM - 5:00 PM",
     weekendHours: "Saturday - Sunday: Closed",
     emergencyDispatch: "Emergency Dispatch Available 24/7",
@@ -92,7 +92,7 @@ export const contactPageData = {
   serviceArea: {
     headline: "Proudly Serving the DFW Metroplex",
     eyebrow: "Regional Coverage",
-    body: "Based in Dallas, Sure Fronts Of Dallas provides commercial glazing, storefront installation, and emergency repair services within a 50-mile radius. Our primary service areas include:",
+    body: "Based in Dallas, Store Fronts Of Dallas provides commercial glazing, storefront installation, and emergency repair services within a 50-mile radius. Our primary service areas include:",
     cities: [
       "Dallas",
       "Fort Worth",
@@ -109,7 +109,7 @@ export const contactPageData = {
     radius: "50-Mile Commercial Service Radius",
   },
   bottomCta: {
-    headline: "Experience the Sure Fronts Difference.",
+    headline: "Experience the Store Fronts Difference.",
     body: "From rapid emergency response to precision commercial installations, we are the partner your property deserves.",
     buttons: {
       estimate: "Request a Free Estimate",

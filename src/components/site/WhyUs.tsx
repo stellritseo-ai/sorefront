@@ -66,7 +66,7 @@ export function WhyUs() {
             <h2 className="font-display text-foreground font-black tracking-tight leading-[1.14] text-2xl sm:text-3xl lg:text-[36px] xl:text-[38px] mt-0 mb-3.5 max-w-xl">
               Why Dallas Commercial Properties Trust{" "}
               <span className="bg-gradient-to-r from-primary via-red-500 to-[#b91c1c] bg-clip-text text-transparent">
-                Sore Fronts
+                Store Fronts
               </span>
               .
             </h2>

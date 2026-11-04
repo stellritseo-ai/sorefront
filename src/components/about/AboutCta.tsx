@@ -227,7 +227,7 @@ export function AboutCta() {
                     Thank You! We Have Received Your Request
                   </h4>
                   <p className="text-xs sm:text-sm text-muted-foreground max-w-md mx-auto">
-                    A commercial glazing specialist from Sure Fronts Of Dallas will review your requirements and reach out within 1 business hour.
+                    A commercial glazing specialist from Store Fronts Of Dallas will review your requirements and reach out within 1 business hour.
                   </p>
                   <button
                     type="button"

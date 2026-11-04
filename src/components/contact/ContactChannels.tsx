@@ -141,11 +141,11 @@ export function ContactChannels() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="mailto:support@sorefrontsofdallas.com"
+                href="mailto:support@storefrontsofdallas.com"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50 transition-all truncate"
               >
                 <Mail className="h-3.5 w-3.5 shrink-0" />
-                <span className="truncate">Email: support@sorefrontsofdallas.com</span>
+                <span className="truncate">Email: support@storefrontsofdallas.com</span>
               </a>
             </div>
           </div>

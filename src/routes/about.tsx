@@ -10,20 +10,20 @@ import { AboutWhyUs } from "@/components/about/AboutWhyUs";
 import { AboutCta } from "@/components/about/AboutCta";
 import { site } from "@/data/site";
 
-const title = "About Sure Fronts Of Dallas | Commercial Glazing & Storefront Specialists";
+const title = "About Store Fronts Of Dallas | Commercial Glazing & Storefront Specialists";
 const description =
-  "For over 15 years, Sure Fronts Of Dallas has been the premier choice for commercial glass, storefront, and architectural glazing systems in Dallas-Fort Worth. Licensed, insured and bonded.";
+  "For over 15 years, Store Fronts Of Dallas has been the premier choice for commercial glass, storefront, and architectural glazing systems in Dallas-Fort Worth. Licensed, insured and bonded.";
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   mainEntity: {
     "@type": "LocalBusiness",
-    name: "Sure Fronts Of Dallas",
-    alternateName: "Sore Fronts Of Dallas",
+    name: "Store Fronts Of Dallas",
+    alternateName: "Store Fronts Dallas",
     description,
     telephone: "+1-469-360-5805",
-    email: "support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "10830 N. Central Expressway Ste. 130",

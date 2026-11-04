@@ -135,7 +135,7 @@ export function EstimateContactAndMap() {
             <div className="h-full rounded-2xl border border-border/90 bg-card p-2 sm:p-3 shadow-soft group relative flex flex-col">
               <div className="relative flex-1 min-h-[340px] sm:min-h-[400px] w-full rounded-xl overflow-hidden bg-secondary">
                 <iframe
-                  title="Sure Fronts Of Dallas Facility Location Map"
+                  title="Store Fronts Of Dallas Facility Location Map"
                   src={contact.mapEmbedUrl}
                   loading="lazy"
                   className="h-full w-full min-h-[340px] sm:min-h-[400px] border-0"

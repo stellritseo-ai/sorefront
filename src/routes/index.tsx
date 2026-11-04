@@ -15,7 +15,7 @@ import { FinalCta } from "@/components/site/FinalCta";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const title = "Commercial Glass Door Services Dallas | Sore Fronts Of Dallas";
+const title = "Commercial Glass Door Services Dallas | Store Fronts Of Dallas";
 const description =
   "Commercial glass door, storefront and window installation, repair and replacement in Dallas, TX. Licensed, insured and bonded with 24/7 emergency commercial glass service.";
 
@@ -25,14 +25,14 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       "@id": "https://www.glassdoordallas.com/#localbusiness",
-      name: "Sore Fronts Of Dallas",
-      alternateName: "Sure Fronts Of Dallas",
+      name: "Store Fronts Of Dallas",
+      alternateName: "Store Fronts Dallas",
       url: "https://www.glassdoordallas.com",
       logo: "https://www.glassdoordallas.com/favicon.png",
       image: "https://www.glassdoordallas.com/og-image.jpg",
       description,
       telephone: "+1-469-360-5805",
-      email: "support@sorefrontsofdallas.com",
+      email: "support@storefrontsofdallas.com",
       priceRange: "$$",
       address: {
         "@type": "PostalAddress",
@@ -83,7 +83,7 @@ const structuredData = {
       "@type": "WebSite",
       "@id": "https://www.glassdoordallas.com/#website",
       url: "https://www.glassdoordallas.com",
-      name: "Sore Fronts Of Dallas",
+      name: "Store Fronts Of Dallas",
       description: "Dallas commercial glass doors, storefront systems and architectural glazing.",
       publisher: {
         "@id": "https://www.glassdoordallas.com/#localbusiness",

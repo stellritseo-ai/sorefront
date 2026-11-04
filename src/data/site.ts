@@ -1,9 +1,9 @@
 export const site = {
-  name: "Sore Fronts Of Dallas",
+  name: "Store Fronts Of Dallas",
   phone: "(469) 360-5805",
   phoneHref: "tel:+14693605805",
-  email: "support@sorefrontsofdallas.com",
-  emailHref: "mailto:support@sorefrontsofdallas.com",
+  email: "support@storefrontsofdallas.com",
+  emailHref: "mailto:support@storefrontsofdallas.com",
   address: {
     street: "10830 N. Central Expressway Ste. 130",
     city: "Dallas",
@@ -342,7 +342,7 @@ export const reviews: { name: string; company?: string; quote: string; rating?: 
 export const faqs = [
   {
     q: "Do you provide commercial glass services only?",
-    a: "Yes. Sore Fronts Of Dallas works exclusively with commercial properties — storefronts, offices, retail spaces and other business environments.",
+    a: "Yes. Store Fronts Of Dallas works exclusively with commercial properties — storefronts, offices, retail spaces and other business environments.",
   },
   {
     q: "What areas do you serve?",

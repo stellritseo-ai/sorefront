@@ -251,7 +251,7 @@ export function EstimateHeroAndForm() {
                     Estimate Request Received!
                   </h3>
                   <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-foreground">{formData.contactName}</strong>. A dedicated project manager from Sure Fronts Of Dallas has received your project details for <strong className="text-foreground">{formData.businessName}</strong> and will contact you within 24 business hours.
+                    Thank you, <strong className="text-foreground">{formData.contactName}</strong>. A dedicated project manager from Store Fronts Of Dallas has received your project details for <strong className="text-foreground">{formData.businessName}</strong> and will contact you within 24 business hours.
                   </p>
                   <div className="pt-2">
                     <button

@@ -5,7 +5,7 @@ import { ServicesHubHero } from "@/components/services/ServicesHubHero";
 import { ServicesHubGrid } from "@/components/services/ServicesHubGrid";
 import { ServiceBottomCta } from "@/components/services/ServiceBottomCta";
 
-const title = "Commercial Glazing & Storefront Services | Sure Fronts Of Dallas";
+const title = "Commercial Glazing & Storefront Services | Store Fronts Of Dallas";
 const description =
   "Explore our commercial glass and storefront services across Dallas-Fort Worth. Commercial entrance door installation, storefront glass repair, architectural windows, Grade 1 hardware, and 24/7 emergency dispatch.";
 
@@ -15,10 +15,10 @@ const structuredData = {
   serviceType: "Commercial Glazing and Storefront Systems",
   provider: {
     "@type": "LocalBusiness",
-    name: "Sure Fronts Of Dallas",
-    alternateName: "Sore Fronts Of Dallas",
+    name: "Store Fronts Of Dallas",
+    alternateName: "Store Fronts Dallas",
     telephone: "+1-469-360-5805",
-    email: "support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "10830 N. Central Expressway Ste. 130",

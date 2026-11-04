@@ -24,7 +24,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "High-Traffic Entrance Systems",
     tagline: "Engineered Commercial Glass Entrance Systems Built for Daily Traffic Across Dallas–Fort Worth.",
     overview:
-      "From sleek all-glass frameless corporate entrances to heavy-duty narrow, medium, and wide-stile aluminum doors, Sure Fronts Of Dallas engineers and installs complete commercial entrance packages. Designed to withstand millions of opening cycles, Texas weather extremes, and stringent ADA egress codes.",
+      "From sleek all-glass frameless corporate entrances to heavy-duty narrow, medium, and wide-stile aluminum doors, Store Fronts Of Dallas engineers and installs complete commercial entrance packages. Designed to withstand millions of opening cycles, Texas weather extremes, and stringent ADA egress codes.",
     imageKey: "doors",
     features: [
       {
@@ -120,7 +120,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "Rapid Diagnosis & Alignment",
     tagline: "Restoring Safety, Egress, and Smooth Operation to Damaged Commercial Doors Across DFW.",
     overview:
-      "A malfunctioning commercial glass door is a severe security vulnerability, energy drain, and ADA liability. Sure Fronts Of Dallas provides rapid dispatch across the Metroplex to repair sagging doors, replace leaking hydraulic closers, rebuild broken pivots, and restore smooth, quiet entrance operation.",
+      "A malfunctioning commercial glass door is a severe security vulnerability, energy drain, and ADA liability. Store Fronts Of Dallas provides rapid dispatch across the Metroplex to repair sagging doors, replace leaking hydraulic closers, rebuild broken pivots, and restore smooth, quiet entrance operation.",
     imageKey: "hardware",
     features: [
       {
@@ -213,7 +213,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "Turnkey Commercial Systems",
     tagline: "Turnkey Aluminum Storefront Systems & Glazing Packages Engineered for Dallas Businesses.",
     overview:
-      "A modern, well-engineered commercial storefront transforms your building's curb appeal, maximizes daylight, and protects your property against Texas storms and energy losses. Sure Fronts Of Dallas provides complete storefront engineering, custom fabrication, and turnkey installation for new construction and tenant build-outs.",
+      "A modern, well-engineered commercial storefront transforms your building's curb appeal, maximizes daylight, and protects your property against Texas storms and energy losses. Store Fronts Of Dallas provides complete storefront engineering, custom fabrication, and turnkey installation for new construction and tenant build-outs.",
     imageKey: "storefront",
     features: [
       {
@@ -305,7 +305,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "Fast Glass Replacement",
     tagline: "Rapid Assessment, Structural Securing, and Glass Restoration for Damaged Storefronts.",
     overview:
-      "Broken, cracked, or leaking storefront glass compromises your business's security, professional image, and indoor comfort. Sure Fronts Of Dallas delivers rapid response commercial glass replacement, securing damaged bays immediately and installing exact-match architectural glass units.",
+      "Broken, cracked, or leaking storefront glass compromises your business's security, professional image, and indoor comfort. Store Fronts Of Dallas delivers rapid response commercial glass replacement, securing damaged bays immediately and installing exact-match architectural glass units.",
     imageKey: "install",
     features: [
       {
@@ -397,7 +397,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "Thermal & Acoustic Efficiency",
     tagline: "Fixed & Operable Commercial Window Systems Engineered for DFW Energy Efficiency and Durability.",
     overview:
-      "Upgrade your commercial building's thermal performance, acoustic insulation, and natural daylighting with custom engineered commercial windows. Sure Fronts Of Dallas designs, replaces, and installs fixed ribbon windows, architectural punched openings, and high-performance insulated glass for corporate facilities.",
+      "Upgrade your commercial building's thermal performance, acoustic insulation, and natural daylighting with custom engineered commercial windows. Store Fronts Of Dallas designs, replaces, and installs fixed ribbon windows, architectural punched openings, and high-performance insulated glass for corporate facilities.",
     imageKey: "windows",
     features: [
       {
@@ -489,7 +489,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "24/7 Rapid Mobilization",
     tagline: "24/7 Rapid Emergency Dispatch for Broken Commercial Glass, Vehicle Impacts, and Security Breaches.",
     overview:
-      "When a break-in, severe storm, vehicular impact, or unexpected structural failure shatters your commercial glass, security cannot wait until morning. Sure Fronts Of Dallas provides 24/7/365 emergency mobile dispatch across Dallas–Fort Worth to secure your premises, clear hazardous debris, and initiate priority replacement.",
+      "When a break-in, severe storm, vehicular impact, or unexpected structural failure shatters your commercial glass, security cannot wait until morning. Store Fronts Of Dallas provides 24/7/365 emergency mobile dispatch across Dallas–Fort Worth to secure your premises, clear hazardous debris, and initiate priority replacement.",
     imageKey: "night",
     features: [
       {
@@ -581,7 +581,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "ANSI/BHMA Grade 1 Hardware",
     tagline: "Heavy-Duty Panic Devices, Closers, Hinges, Pivots, and Access Control Hardware for DFW Businesses.",
     overview:
-      "A commercial glass door is only as reliable as the hardware that controls it. High daily pedestrian traffic, wind pressures, and strict fire/ADA codes demand commercial-grade mechanical components. Sure Fronts Of Dallas installs, adjusts, and retrofits Grade 1 architectural hardware engineered for millions of smooth opening cycles.",
+      "A commercial glass door is only as reliable as the hardware that controls it. High daily pedestrian traffic, wind pressures, and strict fire/ADA codes demand commercial-grade mechanical components. Store Fronts Of Dallas installs, adjusts, and retrofits Grade 1 architectural hardware engineered for millions of smooth opening cycles.",
     imageKey: "hardware",
     features: [
       {
@@ -673,7 +673,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     heroBadge: "Preventative Facility Care",
     tagline: "Proactive Glazing Maintenance, Fogged Glass Replacement, and Long-Term Commercial Facility Care.",
     overview:
-      "Commercial glass systems represent a major capital investment. Preventative maintenance and timely glass replacement protect your property from water intrusion, structural frame corrosion, and expensive emergency replacements. Sure Fronts Of Dallas partners with DFW property managers, facility directors, and building owners to maintain peak building envelope performance.",
+      "Commercial glass systems represent a major capital investment. Preventative maintenance and timely glass replacement protect your property from water intrusion, structural frame corrosion, and expensive emergency replacements. Store Fronts Of Dallas partners with DFW property managers, facility directors, and building owners to maintain peak building envelope performance.",
     imageKey: "lobby",
     features: [
       {

@@ -109,7 +109,7 @@ const reviewsRow2: Review[] = [
     initials: "SL",
     avatarGradient: "from-[#065F46] to-[#064E3B]",
     tagClass: "bg-emerald-600/[0.08] text-emerald-800 border-emerald-600/20",
-    text: "Transparent, itemized proposals with zero surprise change orders. From laser measurement to final sign-off, Sore Fronts is our most reliable glazing contractor in DFW.",
+    text: "Transparent, itemized proposals with zero surprise change orders. From laser measurement to final sign-off, Store Fronts is our most reliable glazing contractor in DFW.",
     badge: "Commercial Client",
   },
   {
@@ -277,7 +277,7 @@ export function Reviews() {
           </h2>
 
           <p className="text-slate-500 text-[13px] sm:text-[14px] leading-relaxed font-medium max-w-xl mx-auto mb-4 sm:mb-6">
-            Real feedback from commercial builders, retail property managers, corporate facilities directors, and local Dallas businesses who count on Sore Fronts Of Dallas every day.
+            Real feedback from commercial builders, retail property managers, corporate facilities directors, and local Dallas businesses who count on Store Fronts Of Dallas every day.
           </p>
         </Reveal>
 
@@ -372,7 +372,7 @@ export function Reviews() {
           </a>
 
           <a
-            href="https://www.google.com/search?q=Sore+Fronts+Of+Dallas"
+            href="https://www.google.com/search?q=Store+Fronts+Of+Dallas"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-5 py-2.5 text-xs font-bold text-slate-700 hover:text-primary hover:border-primary/40 shadow-xs transition-colors group"

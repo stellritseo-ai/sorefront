@@ -1,8 +1,8 @@
-# Sore Fronts Of Dallas — Complete SEO Strategy & Keyword Directory
+# Store Fronts Of Dallas — Complete SEO Strategy & Keyword Directory
 
 > **Official Website:** [https://www.glassdoordallas.com](https://www.glassdoordallas.com)  
 > **Location:** 10830 N. Central Expressway Ste. 130, Dallas, TX 75231  
-> **Phone:** [(469) 360-5805](tel:+14693605805) · **Email:** [support@sorefrontsofdallas.com](mailto:support@sorefrontsofdallas.com)  
+> **Phone:** [(469) 360-5805](tel:+14693605805) · **Email:** [support@storefrontsofdallas.com](mailto:support@storefrontsofdallas.com)  
 > **Service Radius:** 50-Mile DFW Commercial Metroplex Coverage  
 
 ---
@@ -31,7 +31,7 @@
 
 ## Executive Summary & Site Architecture
 
-Sore Fronts Of Dallas provides commercial-only architectural glass, storefront system installation, glass door repairs, and 24/7 emergency glazing across the Dallas–Fort Worth Metroplex.
+Store Fronts Of Dallas provides commercial-only architectural glass, storefront system installation, glass door repairs, and 24/7 emergency glazing across the Dallas–Fort Worth Metroplex.
 
 Every page is optimized for maximum organic crawlability, keyword relevance, conversion rate, and local Dallas search intent:
 
@@ -223,7 +223,7 @@ Configured globally in `src/routes/__root.tsx`:
 To dominate the Google Local 3-Pack in Dallas for commercial glass:
 
 1. **Exact NAP Consistency:**  
-   - **Name:** Sore Fronts Of Dallas  
+   - **Name:** Store Fronts Of Dallas  
    - **Address:** 10830 N. Central Expressway Ste. 130, Dallas, TX 75231  
    - **Phone:** (469) 360-5805  
    Ensure all citations (Yelp Commercial, Angi, YellowPages, BBB, Google Business Profile) use this exact format.

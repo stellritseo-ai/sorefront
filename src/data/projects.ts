@@ -296,7 +296,7 @@ export const projectsPageData = {
     challenge:
       "The client required an imposing, ultra-clear entrance atrium to showcase modern corporate aesthetics while withstanding North Texas thermal extremes and daily foot traffic of over 1,500 employees, all with zero interruption to active office operations.",
     solution:
-      "Sure Fronts Of Dallas engineered a custom structural glass fin facade utilizing extra-clear low-iron glass, heavy-duty frameless commercial entrance doors, and concealed in-floor hydraulic closers. All fabrication was pre-measured with laser precision and installed in phased after-hours shifts.",
+      "Store Fronts Of Dallas engineered a custom structural glass fin facade utilizing extra-clear low-iron glass, heavy-duty frameless commercial entrance doors, and concealed in-floor hydraulic closers. All fabrication was pre-measured with laser precision and installed in phased after-hours shifts.",
     results: [
       { metric: "100%", desc: "On-Schedule Completion with Zero Tenant Downtime" },
       { metric: "35%", desc: "Reduction in Solar Heat Infiltration via Low-Iron Low-E" },

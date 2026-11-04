@@ -25,7 +25,7 @@ export function ProjectsIndustries() {
             Industries &amp; Properties We Serve
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
-            Sure Fronts Of Dallas is 100% focused on commercial glazing. We understand the distinct operational demands, building codes, and traffic thresholds of each sector.
+            Store Fronts Of Dallas is 100% focused on commercial glazing. We understand the distinct operational demands, building codes, and traffic thresholds of each sector.
           </p>
         </div>
 

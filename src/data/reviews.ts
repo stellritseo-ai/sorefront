@@ -2,7 +2,7 @@ export const reviewsPageData = {
   hero: {
     headline: "Trusted by Dallas Property Owners & Contractors.",
     subheadline:
-      "Don't just take our word for it. See why businesses across the DFW Metroplex rely on Sure Fronts Of Dallas for their commercial glazing, storefront, and emergency repair needs.",
+      "Don't just take our word for it. See why businesses across the DFW Metroplex rely on Store Fronts Of Dallas for their commercial glazing, storefront, and emergency repair needs.",
     rating: "4.9",
     ratingStars: 5,
     ratingText: "Out of 5 Stars",
@@ -12,10 +12,10 @@ export const reviewsPageData = {
     phoneHref: "tel:+14693605805",
   },
   guarantee: {
-    eyebrow: "The Sure Fronts Guarantee",
+    eyebrow: "The Store Fronts Guarantee",
     headline: "A Reputation Built on Precision and Reliability",
     paragraphs: [
-      "In the commercial glazing industry, your reputation is everything. At Sure Fronts Of Dallas, we have spent over 15 years earning the trust of general contractors, property managers, and business owners across North Texas.",
+      "In the commercial glazing industry, your reputation is everything. At Store Fronts Of Dallas, we have spent over 15 years earning the trust of general contractors, property managers, and business owners across North Texas.",
       "We know that a broken storefront or a delayed installation costs you time and money. That is why we are committed to transparent communication, rapid response times, and uncompromising craftsmanship on every single project—whether it's a 24/7 emergency board-up or a multi-story curtain wall installation.",
       "Here is what our clients have to say about working with us.",
     ],
@@ -26,7 +26,7 @@ export const reviewsPageData = {
       category: "The Property Manager",
       rating: 5,
       quote:
-        "Sure Fronts Of Dallas is our go-to for all our retail properties. We had a tenant's storefront shatter late on a Friday night. Their 24/7 emergency team was on-site within two hours to board it up, and they had the new glass installed by Tuesday morning. Their communication and speed are unmatched.",
+        "Store Fronts Of Dallas is our go-to for all our retail properties. We had a tenant's storefront shatter late on a Friday night. Their 24/7 emergency team was on-site within two hours to board it up, and they had the new glass installed by Tuesday morning. Their communication and speed are unmatched.",
       author: "Sarah M.",
       role: "Property Manager",
       company: "Managing 15+ Retail Centers across DFW",
@@ -40,7 +40,7 @@ export const reviewsPageData = {
       category: "The General Contractor",
       rating: 5,
       quote:
-        "As a GC, I need subcontractors who show up on time and know the local codes. Sure Fronts handled the storefront and entrance systems for our recent office build-out in Plano. Their fabrication was precise, and they passed inspection with zero punch-list items. Highly recommended.",
+        "As a GC, I need subcontractors who show up on time and know the local codes. Store Fronts handled the storefront and entrance systems for our recent office build-out in Plano. Their fabrication was precise, and they passed inspection with zero punch-list items. Highly recommended.",
       author: "David T.",
       role: "General Contractor",
       company: "Commercial Construction Firm",
@@ -54,7 +54,7 @@ export const reviewsPageData = {
       category: "The Business Owner",
       rating: 5,
       quote:
-        "We needed to upgrade our salon's storefront to improve curb appeal and energy efficiency. The team at Sure Fronts helped us choose the right thermal glass and hardware. The installation was clean, professional, and done over a weekend so we didn't lose any business days. It looks fantastic.",
+        "We needed to upgrade our salon's storefront to improve curb appeal and energy efficiency. The team at Store Fronts helped us choose the right thermal glass and hardware. The installation was clean, professional, and done over a weekend so we didn't lose any business days. It looks fantastic.",
       author: "Elena R.",
       role: "Business Owner",
       company: "High-End Retail Boutique",
@@ -68,7 +68,7 @@ export const reviewsPageData = {
       category: "The Facility Director",
       rating: 5,
       quote:
-        "We manage a large corporate campus and had an issue with a heavy-duty automatic entrance door failing. Sure Fronts diagnosed the issue quickly, sourced the replacement parts, and had it running smoothly the same day. Their maintenance and repair service is top-tier.",
+        "We manage a large corporate campus and had an issue with a heavy-duty automatic entrance door failing. Store Fronts diagnosed the issue quickly, sourced the replacement parts, and had it running smoothly the same day. Their maintenance and repair service is top-tier.",
       author: "Marcus L.",
       role: "Facility Director",
       company: "Corporate Office Campus",
@@ -82,7 +82,7 @@ export const reviewsPageData = {
       category: "The Facility Director",
       rating: 5,
       quote:
-        "After a severe North Texas hail storm cracked multiple insulated glass panels across our distribution center, Sure Fronts was on-site early next morning. They secured the high-bay openings and installed customized heavy-duty replacement glass with zero operational downtime for our fleet.",
+        "After a severe North Texas hail storm cracked multiple insulated glass panels across our distribution center, Store Fronts was on-site early next morning. They secured the high-bay openings and installed customized heavy-duty replacement glass with zero operational downtime for our fleet.",
       author: "Robert K.",
       role: "Operations Director",
       company: "Logistics & Distribution Center",
@@ -96,7 +96,7 @@ export const reviewsPageData = {
       category: "The General Contractor",
       rating: 5,
       quote:
-        "I have specified Sure Fronts Of Dallas on three major retail and mixed-use developments. Their drafting accuracy, extrusion tolerances, and structural silicone joints are always textbook. When you need complex curtain walls delivered to exact architectural specs, they are North Texas's best.",
+        "I have specified Store Fronts Of Dallas on three major retail and mixed-use developments. Their drafting accuracy, extrusion tolerances, and structural silicone joints are always textbook. When you need complex curtain walls delivered to exact architectural specs, they are North Texas's best.",
       author: "Julianne C.",
       role: "Lead Commercial Architect",
       company: "Architectural Studio DFW",
@@ -110,7 +110,7 @@ export const reviewsPageData = {
       category: "The Business Owner",
       rating: 5,
       quote:
-        "We opened a new restaurant concept in Uptown Dallas and needed an expansive floor-to-ceiling glass entrance with custom black anodized framing. The team at Sure Fronts executed the installation flawlessly ahead of our grand opening inspection. The curb appeal brings in customers every day.",
+        "We opened a new restaurant concept in Uptown Dallas and needed an expansive floor-to-ceiling glass entrance with custom black anodized framing. The team at Store Fronts executed the installation flawlessly ahead of our grand opening inspection. The curb appeal brings in customers every day.",
       author: "Anthony G.",
       role: "Managing Partner",
       company: "Hospitality & Restaurant Group",
@@ -124,7 +124,7 @@ export const reviewsPageData = {
       category: "The Property Manager",
       rating: 5,
       quote:
-        "Managing medical office buildings requires strict compliance with ADA accessibility and safety codes. Sure Fronts replaced our main lobby double pivot doors, installed continuous gear hinges, and tuned the overhead hydraulic closers to exact resistance thresholds. Exceptional professionalism.",
+        "Managing medical office buildings requires strict compliance with ADA accessibility and safety codes. Store Fronts replaced our main lobby double pivot doors, installed continuous gear hinges, and tuned the overhead hydraulic closers to exact resistance thresholds. Exceptional professionalism.",
       author: "Rachel W.",
       role: "Senior Asset Manager",
       company: "Healthcare Real Estate Trust",
@@ -138,7 +138,7 @@ export const reviewsPageData = {
       category: "The Facility Director",
       rating: 5,
       quote:
-        "A tenant break-in left our ground-floor glass entrance destroyed at 3 AM. One call to Sure Fronts, and their mobile glazier truck was here with temporary plywood reinforcement before sunrise. By the afternoon, custom laminated security glass was measured and expedited. That level of dedication is rare.",
+        "A tenant break-in left our ground-floor glass entrance destroyed at 3 AM. One call to Store Fronts, and their mobile glazier truck was here with temporary plywood reinforcement before sunrise. By the afternoon, custom laminated security glass was measured and expedited. That level of dedication is rare.",
       author: "Carlos B.",
       role: "Building Superintendent",
       company: "Executive Plaza Towers",
@@ -152,7 +152,7 @@ export const reviewsPageData = {
       category: "The Business Owner",
       rating: 5,
       quote:
-        "We operate multiple fitness locations in Frisco and McKinney. Whenever we have a door closer slam, pivot misalignment, or shattered storefront window, Sure Fronts handles it immediately. Their transparent estimates and itemized invoicing make corporate approval effortless.",
+        "We operate multiple fitness locations in Frisco and McKinney. Whenever we have a door closer slam, pivot misalignment, or shattered storefront window, Store Fronts handles it immediately. Their transparent estimates and itemized invoicing make corporate approval effortless.",
       author: "Travis N.",
       role: "Franchise Regional Operator",
       company: "North Texas Fitness Network",
@@ -166,7 +166,7 @@ export const reviewsPageData = {
       category: "The General Contractor",
       rating: 5,
       quote:
-        "On commercial construction jobs with tight completion deadlines, glazing delays can derail the entire certificate of occupancy. Sure Fronts fabricated and installed our 12-foot storefront entryways two days ahead of schedule. City inspectors signed off immediately. True commercial partners.",
+        "On commercial construction jobs with tight completion deadlines, glazing delays can derail the entire certificate of occupancy. Store Fronts fabricated and installed our 12-foot storefront entryways two days ahead of schedule. City inspectors signed off immediately. True commercial partners.",
       author: "Michael H.",
       role: "Senior Project Executive",
       company: "Turnkey Commercial Builders",
@@ -180,7 +180,7 @@ export const reviewsPageData = {
       category: "The Business Owner",
       rating: 5,
       quote:
-        "Our showroom has massive 1/2-inch heavy tempered glass panels. When one was damaged by road debris, other glass companies quoted weeks of wait time. Sure Fronts sourced the exact specification, brought out specialized crane glass suction rigs, and installed it flawlessly. Incredible skill.",
+        "Our showroom has massive 1/2-inch heavy tempered glass panels. When one was damaged by road debris, other glass companies quoted weeks of wait time. Store Fronts sourced the exact specification, brought out specialized crane glass suction rigs, and installed it flawlessly. Incredible skill.",
       author: "Samantha P.",
       role: "General Manager",
       company: "Luxury Automotive Dealership",
@@ -194,7 +194,7 @@ export const reviewsPageData = {
     eyebrow: "Why Clients Trust Us",
     headline: "The Foundation of Our 5-Star Service",
     intro:
-      "Our reviews reflect our core operational principles. When you hire Sure Fronts Of Dallas, you are guaranteed:",
+      "Our reviews reflect our core operational principles. When you hire Store Fronts Of Dallas, you are guaranteed:",
     pillars: [
       {
         num: "01",
@@ -230,14 +230,14 @@ export const reviewsPageData = {
   },
   reviewCta: {
     eyebrow: "Client Feedback & Inquiries",
-    headline: "Experience the Sure Fronts Difference",
+    headline: "Experience the Store Fronts Difference",
     intro:
       "Are you a recent client? We would love to hear about your experience! Your feedback helps us continue to provide the highest level of service to the DFW Metroplex.",
     existingClients: {
       title: "Existing Clients",
       desc: "Share your experience and review our team on Google.",
       buttonText: "Leave a Google Review",
-      link: "https://maps.google.com/?q=Sure+Fronts+Of+Dallas+10830+N+Central+Expressway+Dallas+TX",
+      link: "https://maps.google.com/?q=Store+Fronts+Of+Dallas+10830+N+Central+Expressway+Dallas+TX",
     },
     newClients: {
       title: "New Clients",
@@ -255,8 +255,8 @@ export const reviewsPageData = {
     contact: {
       phone: "(469) 360-5805",
       phoneHref: "tel:+14693605805",
-      email: "support@sorefrontsofdallas.com",
-      emailHref: "mailto:support@sorefrontsofdallas.com",
+      email: "support@storefrontsofdallas.com",
+      emailHref: "mailto:support@storefrontsofdallas.com",
     },
   },
 };

@@ -8,18 +8,18 @@ import { ReviewsWhyTrustUs } from "@/components/reviews/ReviewsWhyTrustUs";
 import { ReviewsCta } from "@/components/reviews/ReviewsCta";
 import { reviewsPageData } from "@/data/reviews";
 
-const title = "Client Reviews & Commercial Glazing Ratings | Sure Fronts Of Dallas";
+const title = "Client Reviews & Commercial Glazing Ratings | Store Fronts Of Dallas";
 const description =
   "Read verified commercial reviews from Dallas-Fort Worth property managers, general contractors, and business owners. Rated 4.9/5 stars based on 127+ commercial glazing projects.";
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Sure Fronts Of Dallas",
-  alternateName: "Sore Fronts Of Dallas",
+  name: "Store Fronts Of Dallas",
+  alternateName: "Store Fronts Dallas",
   description,
   telephone: "+1-469-360-5805",
-  email: "support@sorefrontsofdallas.com",
+  email: "support@storefrontsofdallas.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "10830 N. Central Expressway Ste. 130",

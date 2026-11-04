@@ -1,9 +1,9 @@
 export const aboutPageData = {
   hero: {
-    badge: "About Sure Fronts Of Dallas · Commercial Glazing",
+    badge: "About Store Fronts Of Dallas · Commercial Glazing",
     headline: "Building Dallas’s Commercial Landscapes with Precision and Trust.",
     subheadline:
-      "For over 15 years, Sure Fronts Of Dallas has been the premier choice for commercial glass, storefront, and architectural glazing systems. We don't just install glass; we engineer confidence for DFW businesses.",
+      "For over 15 years, Store Fronts Of Dallas has been the premier choice for commercial glass, storefront, and architectural glazing systems. We don't just install glass; we engineer confidence for DFW businesses.",
     ctaPrimary: "Request a Free Estimate",
     ctaSecondary: "Call (469) 360-5805",
     phone: "(469) 360-5805",
@@ -11,9 +11,9 @@ export const aboutPageData = {
   },
   story: {
     eyebrow: "Our Story",
-    headline: "The Sure Fronts Of Dallas Difference",
+    headline: "The Store Fronts Of Dallas Difference",
     paragraphs: [
-      "Founded right here in the heart of Texas, Sure Fronts Of Dallas was built to solve a specific problem: commercial property owners and general contractors needed a glazing partner who understood the unique demands of the DFW market.",
+      "Founded right here in the heart of Texas, Store Fronts Of Dallas was built to solve a specific problem: commercial property owners and general contractors needed a glazing partner who understood the unique demands of the DFW market.",
       "With over 15 years of dedicated experience, we have grown from a local glass repair service into a full-scale commercial glazing contractor. Today, we are proud to serve a 50-mile radius across the Metroplex, delivering top-tier architectural glazing solutions for retail, office, industrial, and municipal facilities.",
       "We are not a \"jack-of-all-trades\" handyman service. We are specialized commercial glazing experts. Whether it’s a high-rise curtain wall in downtown Dallas or a 24/7 emergency board-up in Fort Worth, our team brings the same level of rigorous engineering, safety, and craftsmanship to every single job.",
     ],
@@ -59,7 +59,7 @@ export const aboutPageData = {
     eyebrow: "Our Capabilities",
     headline: "Comprehensive Commercial Glazing Services",
     intro:
-      "Sure Fronts Of Dallas is a full-service glazing contractor equipped to handle projects of any scale. Our expertise covers the entire lifecycle of commercial glass systems:",
+      "Store Fronts Of Dallas is a full-service glazing contractor equipped to handle projects of any scale. Our expertise covers the entire lifecycle of commercial glass systems:",
     services: [
       {
         num: "01",
@@ -158,7 +158,7 @@ export const aboutPageData = {
   whyChooseUs: {
     eyebrow: "Why Choose Us",
     headline: "The Advantage of Hiring a Specialist",
-    lead: "When you hire Sure Fronts Of Dallas, you are not just hiring a subcontractor; you are gaining a partner dedicated to your project's success.",
+    lead: "When you hire Store Fronts Of Dallas, you are not just hiring a subcontractor; you are gaining a partner dedicated to your project's success.",
     items: [
       {
         num: "01",
@@ -189,7 +189,7 @@ export const aboutPageData = {
   cta: {
     eyebrow: "Get In Touch",
     headline: "Ready to Upgrade Your Commercial Property?",
-    body: "Whether you need a complete storefront renovation, routine maintenance, or immediate emergency glass repair, the team at Sure Fronts Of Dallas is ready to help.",
+    body: "Whether you need a complete storefront renovation, routine maintenance, or immediate emergency glass repair, the team at Store Fronts Of Dallas is ready to help.",
     location: {
       address: "10830 N. Central Expressway, Ste 130",
       cityStateZip: "Dallas, TX 75231",
@@ -198,8 +198,8 @@ export const aboutPageData = {
     contact: {
       phone: "(469) 360-5805",
       phoneHref: "tel:+14693605805",
-      email: "support@sorefrontsofdallas.com",
-      emailHref: "mailto:support@sorefrontsofdallas.com",
+      email: "support@storefrontsofdallas.com",
+      emailHref: "mailto:support@storefrontsofdallas.com",
     },
     buttons: {
       estimate: "Request a Free Estimate",

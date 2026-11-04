@@ -8,7 +8,7 @@ import { ProjectsIndustries } from "@/components/projects/ProjectsIndustries";
 import { ProjectsProcess } from "@/components/projects/ProjectsProcess";
 import { ProjectsBottomCta } from "@/components/projects/ProjectsBottomCta";
 
-const title = "Commercial Glass & Storefront Projects | Sure Fronts Of Dallas";
+const title = "Commercial Glass & Storefront Projects | Store Fronts Of Dallas";
 const description =
   "Explore our commercial glass and storefront installations across Dallas-Fort Worth. High-traffic commercial entrances, architectural curtain walls, retail facades, and emergency restorations.";
 
@@ -20,10 +20,10 @@ const structuredData = {
   url: "https://www.glassdoordallas.com/projects",
   provider: {
     "@type": "LocalBusiness",
-    name: "Sure Fronts Of Dallas",
-    alternateName: "Sore Fronts Of Dallas",
+    name: "Store Fronts Of Dallas",
+    alternateName: "Store Fronts Dallas",
     telephone: "+1-469-360-5805",
-    email: "support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "10830 N. Central Expressway Ste. 130",

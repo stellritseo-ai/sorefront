@@ -68,7 +68,7 @@ export function Contact() {
         setIsSubmitted(true);
       } else {
         toast.error("Could not send form online.", {
-          description: "Please call us directly at (469) 360-5805 or email support@sorefrontsofdallas.com",
+          description: "Please call us directly at (469) 360-5805 or email support@storefrontsofdallas.com",
         });
       }
     } catch {
@@ -421,7 +421,7 @@ export function Contact() {
             <div className="overflow-hidden rounded-2xl border border-slate-200/90 shadow-sm bg-white p-2 group relative">
               <div className="relative rounded-xl overflow-hidden bg-slate-100">
                 <iframe
-                  title="Sore Fronts Of Dallas Facility Location Map"
+                  title="Store Fronts Of Dallas Facility Location Map"
                   src={mapEmbedUrl}
                   loading="lazy"
                   className="h-[240px] sm:h-[270px] w-full border-0 transition-opacity duration-300"

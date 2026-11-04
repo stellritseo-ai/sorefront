@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "geo.placename", content: "Dallas, Texas" },
       { name: "geo.position", content: "32.8943;-96.7689" },
       { name: "ICBM", content: "32.8943, -96.7689" },
-      { title: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
+      { title: "Store Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
       {
         name: "description",
         content:
@@ -99,11 +99,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "commercial glass door repair Dallas, storefront glass installation Dallas TX, commercial storefront replacement Dallas, emergency commercial glass repair Dallas, commercial door hardware Dallas, storefront doors Dallas TX, commercial glass company Dallas Fort Worth",
       },
-      { name: "author", content: "Sore Fronts Of Dallas" },
-      { property: "og:site_name", content: "Sore Fronts Of Dallas" },
+      { name: "author", content: "Store Fronts Of Dallas" },
+      { property: "og:site_name", content: "Store Fronts Of Dallas" },
       { property: "og:locale", content: "en_US" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
+      { property: "og:title", content: "Store Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
       {
         property: "og:description",
         content:
@@ -112,9 +112,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image", content: "https://www.glassdoordallas.com/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Sore Fronts Of Dallas - Commercial Glass Doors & Storefront Systems" },
+      { property: "og:image:alt", content: "Store Fronts Of Dallas - Commercial Glass Doors & Storefront Systems" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Sore Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
+      { name: "twitter:title", content: "Store Fronts Of Dallas | Commercial Glass Doors & Storefronts Dallas TX" },
       {
         name: "twitter:description",
         content:

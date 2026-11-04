@@ -144,7 +144,7 @@ export async function sendEmailNotification(submission: ContactSubmission, env?:
             </div>
           </div>
           <div class="footer">
-            Delivered directly from Sore Fronts Of Dallas Lead Engine to ${recipient}
+            Delivered directly from Store Fronts Of Dallas Lead Engine to ${recipient}
           </div>
         </div>
       </body>
@@ -168,7 +168,7 @@ ${submission.message || "None"}
   `.trim();
 
   const info = await mailer.sendMail({
-    from: `"Sore Fronts Of Dallas" <${sender}>`,
+    from: `"Store Fronts Of Dallas" <${sender}>`,
     to: recipient,
     replyTo: submission.email || sender,
     subject,

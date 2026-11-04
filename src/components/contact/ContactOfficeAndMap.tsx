@@ -125,7 +125,7 @@ export function ContactOfficeAndMap() {
           <div className="lg:col-span-7 flex">
             <div className="w-full relative rounded-3xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl min-h-[420px] lg:min-h-full">
               <iframe
-                title="Sure Fronts Of Dallas Office Location"
+                title="Store Fronts Of Dallas Office Location"
                 src={office.mapEmbedUrl}
                 width="100%"
                 height="100%"

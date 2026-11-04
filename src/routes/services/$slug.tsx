@@ -15,8 +15,8 @@ export const Route = createFileRoute("/services/$slug")({
   head: ({ params }) => {
     const s = servicesData[params.slug];
     const title = s
-      ? `${s.title} | Sure Fronts Of Dallas`
-      : "Commercial Glazing Services | Sure Fronts Of Dallas";
+      ? `${s.title} | Store Fronts Of Dallas`
+      : "Commercial Glazing Services | Store Fronts Of Dallas";
     const description = s
       ? s.tagline
       : "Commercial glass and storefront services across Dallas-Fort Worth.";
@@ -49,9 +49,9 @@ export const Route = createFileRoute("/services/$slug")({
                 url: pageUrl,
                 provider: {
                   "@type": "LocalBusiness",
-                  name: "Sure Fronts Of Dallas",
+                  name: "Store Fronts Of Dallas",
                   telephone: "+1-469-360-5805",
-                  email: "support@sorefrontsofdallas.com",
+                  email: "support@storefrontsofdallas.com",
                   address: {
                     "@type": "PostalAddress",
                     streetAddress: "10830 N. Central Expressway Ste. 130",

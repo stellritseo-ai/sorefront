@@ -83,7 +83,7 @@ const commercialServices = [
 
 const quickNav = [
   { label: "Home", href: "/" },
-  { label: "About Sure Fronts", href: "/about" },
+  { label: "About Store Fronts", href: "/about" },
   { label: "Commercial Services", href: "/services" },
   { label: "Featured Projects", href: "/projects" },
   { label: "Installation Process", href: "/#process" },
@@ -566,7 +566,7 @@ export function Footer() {
             {/* Copyright Info & Developer Credit */}
             <div className="flex flex-col xl:flex-row items-center gap-1.5 sm:gap-2.5 text-xs text-slate-400 font-medium order-2 sm:order-1">
               <p>
-                © 2026 Sore Fronts Of Dallas. All Rights Reserved. Commercial Glazing & Storefront Systems.
+                © 2026 Store Fronts Of Dallas. All Rights Reserved. Commercial Glazing & Storefront Systems.
               </p>
               <span className="hidden xl:inline text-white/20">•</span>
               <p className="text-slate-400">

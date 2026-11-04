@@ -8,7 +8,7 @@ import { ContactOfficeAndMap } from "@/components/contact/ContactOfficeAndMap";
 import { ContactServiceArea } from "@/components/contact/ContactServiceArea";
 import { ContactBottomCta } from "@/components/contact/ContactBottomCta";
 
-const title = "Contact Sure Fronts Of Dallas | Commercial Glass & 24/7 Emergency Glazing";
+const title = "Contact Store Fronts Of Dallas | Commercial Glass & 24/7 Emergency Glazing";
 const description =
   "Whether you need a routine estimate, project consultation, or immediate emergency board-up, our commercial glazing experts are ready to assist across the DFW Metroplex.";
 
@@ -17,11 +17,11 @@ const structuredData = {
   "@type": "ContactPage",
   mainEntity: {
     "@type": "LocalBusiness",
-    name: "Sure Fronts Of Dallas",
-    alternateName: "Sore Fronts Of Dallas",
+    name: "Store Fronts Of Dallas",
+    alternateName: "Store Fronts Dallas",
     description,
     telephone: "+1-469-360-5805",
-    email: "support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "10830 N. Central Expressway Ste. 130",

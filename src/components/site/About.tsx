@@ -129,7 +129,7 @@ export function About() {
                           </span>
                         </div>
                         <h4 className="mt-1.5 text-[0.8rem] font-extrabold text-white leading-snug">
-                          Welcome to Sore Fronts
+                          Welcome to Store Fronts
                         </h4>
                         <p className="mt-1 text-[0.62rem] text-white/75 leading-relaxed">
                           DFW 24/7 Commercial Glazing, Entrance Doors & Emergency Dispatch.
@@ -300,7 +300,7 @@ export function About() {
                 className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/8 px-3.5 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-primary backdrop-blur-sm hover:bg-primary/15 transition-colors group cursor-pointer"
               >
                 <Building2 className="h-3.5 w-3.5" />
-                <span>About Sore Fronts Of Dallas</span>
+                <span>About Store Fronts Of Dallas</span>
                 <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
               </a>
 
@@ -313,7 +313,7 @@ export function About() {
             <Reveal delay={0.1}>
               {/* Lead Paragraph */}
               <p className="mt-2.5 sm:mt-3 mb-0 text-sm sm:text-[1.02rem] leading-relaxed text-muted-foreground font-normal max-w-2xl">
-                Sore Fronts Of Dallas provides professional commercial glass door and storefront systems engineered to withstand demanding daily commercial traffic. With over 5 years of dedicated field experience, our certified glaziers service office complexes, retail centers, and commercial properties throughout the entire 50-mile Dallas-Fort Worth metroplex.
+                Store Fronts Of Dallas provides professional commercial glass door and storefront systems engineered to withstand demanding daily commercial traffic. With over 5 years of dedicated field experience, our certified glaziers service office complexes, retail centers, and commercial properties throughout the entire 50-mile Dallas-Fort Worth metroplex.
               </p>
             </Reveal>
 

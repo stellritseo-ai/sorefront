@@ -8,18 +8,18 @@ import { EstimateContactAndMap } from "@/components/estimate/EstimateContactAndM
 import { EstimateBottomCta } from "@/components/estimate/EstimateBottomCta";
 import { estimatePageData } from "@/data/estimate";
 
-const title = "Request a Free Commercial Glass & Storefront Estimate | Sure Fronts Of Dallas";
+const title = "Request a Free Commercial Glass & Storefront Estimate | Store Fronts Of Dallas";
 const description =
   "Partner with Dallas’s trusted commercial glazing experts. From new storefront installations to 24/7 emergency repairs, get a precise, no-obligation quote tailored to your property.";
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Sure Fronts Of Dallas",
-  alternateName: "Sore Fronts Of Dallas",
+  name: "Store Fronts Of Dallas",
+  alternateName: "Store Fronts Dallas",
   description,
   telephone: "+1-469-360-5805",
-  email: "support@sorefrontsofdallas.com",
+  email: "support@storefrontsofdallas.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "10830 N. Central Expressway Ste. 130",

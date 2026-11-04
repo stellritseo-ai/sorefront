@@ -13,7 +13,7 @@ export const estimatePageData = {
   },
   form: {
     headline: "Tell Us About Your Project",
-    body: "Please provide as much detail as possible. A dedicated Sure Fronts project manager will review your request and contact you within 24 business hours to discuss your commercial glazing needs.",
+    body: "Please provide as much detail as possible. A dedicated Store Fronts project manager will review your request and contact you within 24 business hours to discuss your commercial glazing needs.",
     services: [
       "Commercial Storefront Installation",
       "Commercial Glass Door Installation",
@@ -54,7 +54,7 @@ export const estimatePageData = {
   whySureFronts: {
     eyebrow: "Why Choose Us",
     headline: "The Advantage of Hiring a Commercial Specialist",
-    body: "Not all glass companies are created equal. When you request an estimate from Sure Fronts Of Dallas, you are getting a partner dedicated exclusively to commercial glazing.",
+    body: "Not all glass companies are created equal. When you request an estimate from Store Fronts Of Dallas, you are getting a partner dedicated exclusively to commercial glazing.",
     advantages: [
       {
         num: "01",
@@ -85,7 +85,7 @@ export const estimatePageData = {
   contact: {
     headline: "Visit Us or Call Directly",
     body: "Prefer to speak with someone immediately? Our team is ready to assist. For active emergencies, please call our direct line.",
-    company: "Sure Fronts Of Dallas",
+    company: "Store Fronts Of Dallas",
     address: {
       street: "10830 N. Central Expressway, Ste 130",
       city: "Dallas",
@@ -95,8 +95,8 @@ export const estimatePageData = {
     },
     phone: "(469) 360-5805",
     phoneHref: "tel:+14693605805",
-    email: "support@sorefrontsofdallas.com",
-    emailHref: "mailto:support@sorefrontsofdallas.com",
+    email: "support@storefrontsofdallas.com",
+    emailHref: "mailto:support@storefrontsofdallas.com",
     hours: "Mon - Fri: 7:00 AM - 5:00 PM",
     emergency: "Available 24/7",
     mapEmbedUrl:

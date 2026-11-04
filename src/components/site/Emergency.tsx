@@ -129,7 +129,7 @@ export function Emergency() {
 
             <Reveal delay={0.08}>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-800 sm:text-[0.95rem] font-normal">
-                Broken entrance doors, compromised storefront glass, vandalism, or severe weather impacts halt business operations instantly. Sore Fronts Of Dallas mobilizes specialized commercial glazing teams 24 hours a day, 7 days a week across the DFW Metroplex to secure, board up, and permanently restore your facility.
+                Broken entrance doors, compromised storefront glass, vandalism, or severe weather impacts halt business operations instantly. Store Fronts Of Dallas mobilizes specialized commercial glazing teams 24 hours a day, 7 days a week across the DFW Metroplex to secure, board up, and permanently restore your facility.
               </p>
             </Reveal>
 

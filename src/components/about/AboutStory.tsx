@@ -90,7 +90,7 @@ export function AboutStory() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl sm:rounded-2xl bg-charcoal">
                   <img
                     src={whyInstallImg}
-                    alt="Sure Fronts of Dallas commercial glazing team installing heavy glass on job site"
+                    alt="Store Fronts of Dallas commercial glazing team installing heavy glass on job site"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                   {/* Subtle glass reflection overlay */}
